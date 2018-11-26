@@ -1,0 +1,43 @@
+/*----------------------------------------------------------------------------
+  Home
+----------------------------------------------------------------------------*/
+.home-page-contianer {
+  overflow: hidden;
+}
+
+.home-page {
+  height: calc(100vh - 122px);
+  align-items: center;
+
+  #icon1 {
+    opacity: 1;
+    bottom: 15vh;
+    left: 80vw;
+  }
+  #icon2 {
+    opacity: 0.8;
+    bottom: 25vh;
+    left: 10vw;
+  }
+  #icon3 {
+    opacity: 0.6;
+    bottom: 60vh;
+    left: 70vw;
+  }
+  #icon4 {
+    opacity: 0.3;
+    bottom: 70vh;
+    left: 35vw;
+  }
+  #icon5 {
+    opacity: 0.2;
+    bottom: 75vh;
+    left: 90vw;
+  }
+}
+
+.home-bg {
+  position: absolute;
+  width: 100%;
+  padding:25% 25%;
+}

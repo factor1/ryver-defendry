@@ -1,0 +1,61 @@
+/*------------------------------------------------------------------------------
+  3 Col
+------------------------------------------------------------------------------*/
+.three-col {
+  padding: rem(80) 0;
+  background-color: $secondary;
+
+  h1 {
+    margin-bottom: rem(20);
+    color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .col-wrap {
+    img {
+      max-height: rem(120);
+      margin: rem(40) auto rem(20);
+    }
+  }
+
+  .col:nth-of-type(2) {
+    &:before {
+      content: " ";
+      background: url('../img/shadow-left.png') center center/contain no-repeat;
+      position: absolute;
+      left: -20px;
+      top: 25px;
+      height: rem(205);
+      width: rem(30);
+    }
+    &:after {
+      content: " ";
+      background: url('../img/shadow-right.png') center center/contain no-repeat;
+      position: absolute;
+      right: -20px;
+      top: 25px;
+      height: rem(205);
+      width: rem(30);
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .three-col {
+    .col:nth-of-type(2) {
+      &:before, &:after {
+        display: none;
+      }
+    }
+
+    .col-wrap {
+      img {
+        max-height: rem(60);
+      }
+    }
+  }
+}

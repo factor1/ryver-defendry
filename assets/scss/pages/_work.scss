@@ -1,0 +1,137 @@
+/*----------------------------------------------------------------------------
+  Work
+----------------------------------------------------------------------------*/
+.work-page {
+  height: calc(100vh - 125px);
+  align-items: center;
+  transform-style: preserve-3d;
+
+  .work-image-container {
+    z-index: -1;
+  }
+  .work-titles-container {
+    z-index: 1;
+  }
+
+  .text-hover {
+    margin: auto;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .image-wrap {
+    display:none;
+
+    &:hover {
+      .white-lines {
+        opacity: 0.9;
+        transform: scale(1.1);
+      }
+
+      .text-hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .white-lines {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 20px solid $white;
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+
+  .slide {
+    display: flex;
+  }
+
+  .featured-image {
+    display: flex;
+    min-height: 50vh;
+    width: 100%;
+    z-index: -1;
+
+    &:before {
+      content: '';
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    	background-image: linear-gradient(to top right,$dark,$primary);
+    	opacity: .5;
+    }
+  }
+
+  ol {
+    list-style: decimal-leading-zero;
+
+    li {
+      padding: rem(10);
+      opacity: 0.7;
+      z-index: 2;
+      transition: all 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        font-size: rem(28);
+      }
+    }
+
+    .active {
+      width: 70vw;
+      opacity: 1;
+      font-size: rem(46);
+      transition: font-size 0.5s ease;
+
+      &:hover {
+        font-size: rem(46);
+      }
+    }
+  }
+
+  #icon1 {
+    opacity: 1;
+    bottom: 15vh;
+    left: 10vw;
+  }
+  #icon2 {
+    opacity: 0.5;
+    bottom: 70vh;
+    left: 25vw;
+  }
+  #icon3 {
+    opacity: 0.3;
+    bottom: 80vh;
+    left: 70vw;
+  }
+  #icon4 {
+    max-width: rem(300);
+    opacity: 1;
+    bottom: rem(-100);
+    left: rem(-80);
+    z-index: -2;
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .work-page {
+    ol {
+      .active {
+        font-size: rem(36);
+        line-height: rem(42);
+      }
+    }
+
+    .white-lines , .text-hover {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}

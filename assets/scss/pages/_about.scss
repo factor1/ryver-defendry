@@ -1,0 +1,69 @@
+/*----------------------------------------------------------------------------
+  About
+----------------------------------------------------------------------------*/
+.about-page {
+  height: calc(100vh - 125px);
+  align-items: center;
+  transform-style: preserve-3d;
+
+  &__img {
+
+    &:before {
+      content: '';
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    	background-image: linear-gradient(to top right,$dark,$primary);
+    	opacity: .5;
+    }
+
+    img {
+      display: flex;
+    }
+  }
+
+  #icon1 {
+    opacity: 1;
+    bottom: 6vh;
+    left: 80vw;
+  }
+  #icon2 {
+    opacity: 0.8;
+    bottom: 15vh;
+    left: 40vw;
+  }
+  #icon3 {
+    opacity: 0.6;
+    bottom: 65vh;
+    left: 70vw;
+  }
+  #icon4 {
+    opacity: 0.3;
+    bottom: 75vh;
+    left: 25vw;
+  }
+  #icon5 {
+    max-width: rem(200);
+    opacity: 1;
+    bottom: rem(-60);
+    left: calc(-8.333% - 0.8rem);
+    z-index: -2;
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .about-page {
+    &__text {
+      margin: rem(25) 0 rem(70);
+    }
+
+    #icon1 {
+      opacity: 1;
+      bottom: rem(-140);
+      left: 80vw;
+    }
+  }
+}

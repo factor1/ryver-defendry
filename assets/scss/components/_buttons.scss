@@ -1,0 +1,49 @@
+/*----------------------------------------------------------------------------
+  Buttons
+----------------------------------------------------------------------------*/
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: rem(15) rem(25);
+  border-radius: rem(5);
+  text-align: center;
+  margin: 0 auto;
+  line-height: rem(25);
+  font-size: rem(20);
+  transition: all 0.2s ease !important;
+
+  &--primary {
+    color: $white;
+    background-color: $primary;
+
+    &:hover {
+      margin-top: rem(-8) !important;
+      margin-bottom: rem(8) !important;
+      color: $white;
+      box-shadow: 0 20px 40px -20px rgba(0,0,0, 0.6);
+    }
+  }
+
+  &--secondary {
+    color: $white;
+    background-color: $primary;
+    border: 1px solid $primary;
+
+    &:hover {
+      color: $primary;
+      background-color: $white;
+    }
+  }
+
+  &--tertiary {
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+
+    &:hover {
+      color: $secondary;
+      background-color: $white;
+    }
+  }
+}

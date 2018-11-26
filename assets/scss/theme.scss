@@ -1,0 +1,55 @@
+/*-----------------------------------------------------------------------------
+  Table of Contents
+  - Vendor
+  - Globals
+  - Plugins
+  - Pages
+  - Parts
+  - Components
+-----------------------------------------------------------------------------*/
+// import the Sass partials in the order that you need here
+
+// Variable
+@import 'settings/variables';
+
+@import 'settings/ginger-settings';
+@import 'ginger';
+
+@import 'settings/nifty-settings';
+@import 'nifty-nav';
+
+@import 'settings/slick-theme';
+@import 'slick.scss';
+
+// vendor
+@import 'normalize';
+@include normalize();
+
+// Mixins
+@import 'mixins/sugar';
+
+// Global Styles
+@import 'globals/wordpress';
+@import 'globals/typography';
+@import 'globals/global';
+
+// Components
+@import 'components/social-menu';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
+
+// Packages
+@import 'scss/font-awesome';
+
+// Pages
+@import 'pages/page';
+
+// Parts
+@import 'parts/fifty-fifty';
+@import 'parts/hero';
+@import 'parts/cta';
+@import 'parts/three-col';
+
+// Plugin Overrides
+@import 'plugins/overrides';

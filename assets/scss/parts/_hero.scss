@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------------
+  Hero
+------------------------------------------------------------------------------*/
+.hero {
+  position: relative;
+  padding: rem(70) 0;
+
+  &__logo {
+    max-width: rem(240);
+  }
+
+  &__headline {
+    margin: rem(30) 0;
+  }
+
+  .ryver-power {
+    position: absolute;
+    max-width: rem(120);
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .hero {
+    background: $offwhite !important;
+
+    &__logo {
+      margin: auto;
+      max-width: rem(350);
+    }
+
+    .ryver-power {
+      right: calc(50% - 60px);
+    }
+  }
+}

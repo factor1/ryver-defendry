@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------------------
+  CTA
+------------------------------------------------------------------------------*/
+.cta {
+  padding: rem(50) 0;
+  //background-color: $offwhite;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,efefef+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 80%, #efefef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 80%,#efefef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 80%,#efefef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      margin-bottom: rem(30);
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .cta {
+    &__image-wrap {
+      order: -1;
+
+      .fifty-fifty__image {
+        margin: auto;
+
+        img {
+          width: rem(120);
+        }
+      }
+    }
+  }
+}

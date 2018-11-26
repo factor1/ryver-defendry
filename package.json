@@ -1,0 +1,22 @@
+{
+  "name": "danamalkin",
+  "version": "0.0.1",
+  "description": "Custom Wordpress Theme by Dana Malkin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dana Malkin",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "aos": "^2.2.0",
+    "font-awesome": "^4.7.0",
+    "ginger-grid": "^2.1.1",
+    "jquery-parallax.js": "^1.5.0",
+    "nifty-nav": "^3.0.0",
+    "prelude-wp": "^4.0.3",
+    "remodal": "^1.1.1",
+    "slick-carousel": "^1.8.1",
+    "tilt.js": "^1.2.1"
+  }
+}
