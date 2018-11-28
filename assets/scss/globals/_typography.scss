@@ -6,7 +6,11 @@ h1 {
   margin: 0;
   margin-bottom: 15px;
   font: $light rem(70)/rem(72) $lato;
-  color: $secondary;
+  color: $white;
+
+  span {
+    color: $primary;
+  }
 }
 
 h2 {
