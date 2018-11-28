@@ -1,7 +1,7 @@
 {
-  "name": "danamalkin",
+  "name": "Defendry",
   "version": "0.0.1",
-  "description": "Custom Wordpress Theme by Dana Malkin",
+  "description": "Custom Wordpress Theme by Factor1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

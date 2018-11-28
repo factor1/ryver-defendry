@@ -1,10 +1,10 @@
 # IoTalk
-A custom WordPress theme designed and developed by Dana Malkin.
+A custom WordPress theme designed and developed by factor1 for Ryver.
 
 ### Credits
 > Designer & Developer
 
-Dana Malkin
+Factor 1 Studios
 
 ## Packages/Tools Used
 This theme is created with [prelude-wp](https://github.com/prelude-wp).
