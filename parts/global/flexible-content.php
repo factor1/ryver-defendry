@@ -27,6 +27,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'video_modal' ) :
          get_template_part('parts/global/partials/video-modal');
 
+       // Two Column Layout
+       elseif( get_row_layout() == 'two_column_layout' ) :
+         get_template_part('parts/global/partials/two-column-layout');
+
        endif;
 
      endwhile; // close the loop of flexible content

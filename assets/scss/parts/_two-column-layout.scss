@@ -1,0 +1,34 @@
+/*
+ * Two Column Layout
+ */
+
+.two-column-layout {
+  padding: rem(50) 0;
+
+  h1 {
+    margin-bottom: rem(100);
+    color: $gray;
+  }
+
+  &__img {
+    width: 40%;
+    margin: 0 auto rem(30);
+    padding-bottom: 40%;
+    border-radius: 50%;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .two-column-layout {
+    padding: 0 0 rem(50);
+
+    h1 {
+      margin-bottom: rem(50);
+    }
+
+    .col-5:last-of-type {
+      margin-top: rem(30);
+    }
+  }
+}

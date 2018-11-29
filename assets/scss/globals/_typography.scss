@@ -3,8 +3,7 @@
 ------------------------------------------------------------------------------*/
 // Headers
 h1 {
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   font: $light rem(70)/rem(72) $overpass;
   color: $white;
 
@@ -14,9 +13,8 @@ h1 {
 }
 
 h2 {
-  margin: 0;
-  margin-bottom: rem(15);
-  font: $regular rem(30)/rem(38) $overpass;
+  margin: 0 0 rem(15);
+  font: $bold rem(30)/rem(38) $overpass;
   color: $primary;
 }
 
@@ -51,7 +49,7 @@ h6 {
 // Body Copy
 p, ul, ol, li {
   margin: 0 0 rem(15);
-  font: $regular rem(16)/rem(20) $overpass;
+  font: $regular rem(16)/1.5 $overpass;
   letter-spacing: rem(0.5);
   color: $copyColor;
 
