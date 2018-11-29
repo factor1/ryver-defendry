@@ -3,8 +3,10 @@
  */
 
 .centered-column {
-  padding-top: rem(200);
-  background: url('../img/section-bg-img-right.jpg') right top/100% auto no-repeat;
+  &.background {
+    padding-top: rem(200);
+    background: url('../img/section-bg-img-right.jpg') right top/100% auto no-repeat;
+  }
 
   h1 {
     padding: rem(50) 0 rem(25);
@@ -13,20 +15,24 @@
 
   .col-8 div {
     position: relative;
-    padding: rem(100) rem(20);
+    padding-bottom: rem(20);
 
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: auto;
-      right: auto;
-      margin: auto;
-      width: rem(20);
-      height: rem(20);
-      border-radius: 50%;
-      background: $primary;
-      background: linear-gradient($primary, $darkPrimary);
+    &.dot {
+      padding: rem(100) rem(20);
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        margin: auto;
+        width: rem(20);
+        height: rem(20);
+        border-radius: 50%;
+        background: $primary;
+        background: linear-gradient($primary, $darkPrimary);
+      }
     }
   }
 
@@ -40,10 +46,14 @@
 // Media Queries
 @media screen and (max-width: $small-breakpoint) {
   .centered-column {
-    padding-top: rem(50);
+    &.background {
+      padding-top: rem(50);
+    }
 
     .col-8 div {
-      padding: rem(50) rem(20);
+      &.dot {
+        padding: rem(50) rem(20);
+      }
     }
   }
 }
