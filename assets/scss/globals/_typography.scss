@@ -28,13 +28,13 @@ h4 {
   margin: 0;
   margin-bottom: rem(25);
   font: $light rem(35)/rem(40) $overpass;
-  color: $secondary;
+  color: $primary;
 }
 
 h5 {
   margin: 0;
   font: $light rem(14)/rem(16) $overpass;
-  color: $secondary;
+  color: $darkPrimary;
   opacity: 0.6;
 }
 
@@ -72,7 +72,7 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: $secondary;
+    color: $darkPrimary;
   }
 }
 

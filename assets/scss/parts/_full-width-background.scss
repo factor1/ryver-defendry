@@ -1,0 +1,43 @@
+/*
+ * Full Width Background Section
+ */
+
+.full-width-background {
+  margin-top: rem(75);
+  padding: 20% 0 10%;
+
+  h4 {
+    color: $white;
+    font-size: rem(48);
+
+    b {
+      font-weight: 900;
+    }
+  }
+
+  .button {
+    margin-top: rem(40);
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .full-width-background {
+    margin-top: rem(40);
+    padding: 30% 0 10%;
+
+    h4 {
+      font-size: rem(30);
+    }
+
+    .button {
+      margin-top: rem(20);
+    }
+  }
+}
+
+@media screen and (max-width: rem(500)) {
+  .full-width-background {
+    padding: 50% 0 10%;
+  }
+}

@@ -39,6 +39,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'icon_block_grid' ) :
          get_template_part('parts/global/partials/icon-block-grid');
 
+       // Full Width Background
+       elseif( get_row_layout() == 'full_width_background_section' ) :
+         get_template_part('parts/global/partials/full-width-background');
+
        endif;
 
      endwhile; // close the loop of flexible content
