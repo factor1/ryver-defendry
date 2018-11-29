@@ -31,6 +31,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'two_column_layout' ) :
          get_template_part('parts/global/partials/two-column-layout');
 
+       // Centered Column
+       elseif( get_row_layout() == 'centered_column' ) :
+         get_template_part('parts/global/partials/centered-column');
+
        endif;
 
      endwhile; // close the loop of flexible content
