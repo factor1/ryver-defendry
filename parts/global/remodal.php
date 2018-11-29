@@ -179,3 +179,21 @@
     </div>
   </div>
 </div>
+
+<?php // Video Modals
+if( have_rows('flexible_content') ):  while ( have_rows('flexible_content') ) : the_row();
+  if( get_row_layout() == 'video_modal' ) :
+    $video = get_sub_field('video'); ?>
+
+    <div class="remodal-bg">
+      <div class="remodal" data-remodal-id="video-modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <div class="flex-video">
+          <?php echo $video; ?>
+        </div>
+      </div>
+    </div>
+
+  <?php endif;
+endwhile; endif; ?>

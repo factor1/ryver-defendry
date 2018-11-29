@@ -23,6 +23,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'cta' ) :
          get_template_part('parts/global/partials/cta');
 
+       // Video Modal
+       elseif( get_row_layout() == 'video_modal' ) :
+         get_template_part('parts/global/partials/video-modal');
+
        endif;
 
      endwhile; // close the loop of flexible content
