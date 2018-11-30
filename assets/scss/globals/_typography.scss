@@ -42,7 +42,8 @@ h6 {
   margin-top: 0;
   margin-bottom: rem(20);
   font: $bold rem(18)/rem(20) $overpass;
-  color: $copyColor;
+  letter-spacing: .1em;
+  color: $lightGray;
   text-transform: uppercase;
 }
 
