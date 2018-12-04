@@ -16,20 +16,24 @@ This theme is created with [prelude-wp](https://github.com/prelude-wp).
 
 ### npm dependencies
 ```json
+"aos": "^2.2.0",
+"browser-sync": "^2.26.3",
 "font-awesome": "^4.7.0",
-"ginger-grid": "^2.1.1",
+"ginger-grid": "^2.2.0",
+"jquery-parallax.js": "^1.5.0",
 "nifty-nav": "^3.0.0",
-"prelude-wp": "^3.5.1",
-"sugar": "more-sugar#^1.0.5",
-"aos": "^2.3.1",
+"normalize-scss": "^7.0.1",
+"prelude-wp": "^4.0.3",
+"remodal": "^1.1.1",
+"slick-carousel": "^1.8.1",
+"tilt.js": "^1.2.1"
 ```
 
-## Remote Repos
+## Hosting
 
-#### Production Repo
-```sh
-## Coming Soon
-```
+#### Production URL
+http://defendry.com
 
 ## Questions / Issues / Access
-Not intended for public use at this time.
+If you have any questions, issues, or need access to this repo please reach out to
+us at [factor1studios.com](http://factor1studios.com).
