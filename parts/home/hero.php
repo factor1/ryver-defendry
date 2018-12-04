@@ -13,8 +13,8 @@
       <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/PoweredByRyver-Logo-DarkBG-2.svg" />
     </a>
     <div class="row">
-      <div class="sm-col-8 col-8 md-col-10 offset-1">
-        <div class="hero__logo" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
+      <div class="col-7 md-col-8 sm-text-center">
+        <div class="hero__logo sm-text-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo.svg" alt="Defendry" />
         </div>
         <h1 class="hero__headline" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="600">

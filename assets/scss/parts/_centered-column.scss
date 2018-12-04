@@ -3,6 +3,8 @@
  */
 
 .centered-column {
+  z-index: 1;
+
   &.background {
     padding-top: rem(200);
     background: url('../img/section-bg-img-right.jpg') right top/100% auto no-repeat;
@@ -23,7 +25,7 @@
       &:after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: rem(-10);
         left: auto;
         right: auto;
         margin: auto;

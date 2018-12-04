@@ -72,7 +72,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" />
         </div>
         <div class="col-10 sm-col-10 col-no-pad columns stretch">
-          <a href="mailto:info@iotalk.com">info@iotalk.com</a>
+          <a href="mailto:info@defendry.com">info@defendry.com</a>
         </div>
       </div>
       <div class="row">
@@ -89,7 +89,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo-dark.svg" />
       </a>
       <p class="text-center">
-        <span>The First</span> Active Shooter Prevention System
+        <span>The Smart Way</span> to Protect Your People
       </p>
       <a class="text-center" href="https://ryver.com/">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
@@ -100,16 +100,16 @@
     <div class="row">
       <div class="col-6 sm-col-11 col-centered">
         <ul>
-          <li>
-            <a href="/terms-of-service">Terms of Service</a>
-          </li>
+          <?php //<li>
+            //<a href="/terms-of-service">Terms of Service</a>
+          //</li> ?>
           <li>
             <a href="/privacy-policy">Privacy Policy</a>
           </li>
         </ul>
       </div>
       <div class="col-6 sm-col-11 col-centered copywright-wrap">
-        <h5 class="copyright">&copy; <?php echo date("Y"); ?> IoTalk. All Rights Reserved.</h5>
+        <h5 class="copyright">&copy; <?php echo date("Y"); ?> Defendry. All Rights Reserved.</h5>
       </div>
     </div>
   </div>

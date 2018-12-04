@@ -47,11 +47,12 @@
       input {
         height: rem(37);
         color: $white;
+        font-weight: 700;
         background-color: $primary;
         border: 1px solid $primary;
 
         &:hover {
-          color: $primary;
+          color: $white;
           background-color: $white;
         }
       }
@@ -129,7 +130,7 @@
         &:first-of-type {
           a {
             padding-left: 0;
-            border-right: rem(2) solid $copyColor;
+            // border-right: rem(2) solid $copyColor;
           }
         }
       }
