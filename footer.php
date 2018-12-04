@@ -109,7 +109,7 @@
         </ul>
       </div>
       <div class="col-6 sm-col-11 col-centered copywright-wrap">
-        <h5 class="copyright">&copy; <?php echo date("Y"); ?> IoTalk. All Rights Reserved.</h5>
+        <h5 class="copyright">&copy; <?php echo date("Y"); ?> Defendry. All Rights Reserved.</h5>
       </div>
     </div>
   </div>
