@@ -7,10 +7,9 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
         <div class="close-bg"></div>
       </div>
-      <h2>Tell Me About IoTalk</h2>
+      <h2>Tell Me About Defendry</h2>
     </div>
     <div class="remodal__body">
-      <p>Please tell us a bit about yourself, and we'll get back to you as soon as possible!</p>
       <!-- Begin MailChimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
       <style type="text/css">
@@ -53,7 +52,7 @@
                       <input type="text" name="b_bbfac7d1353c0b75fa67a2cab_aeda8d9674" tabindex="-1" value="">
                   </div>
                   <div class="clear">
-                      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button button--secondary">
+                      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button button--primary">
                   </div>
               </div>
           </form>
