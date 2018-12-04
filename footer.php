@@ -72,7 +72,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" />
         </div>
         <div class="col-10 sm-col-10 col-no-pad columns stretch">
-          <a href="mailto:info@iotalk.com">info@iotalk.com</a>
+          <a href="mailto:info@defendry.com">info@defendry.com</a>
         </div>
       </div>
       <div class="row">
@@ -100,9 +100,9 @@
     <div class="row">
       <div class="col-6 sm-col-11 col-centered">
         <ul>
-          <li>
-            <a href="/terms-of-service">Terms of Service</a>
-          </li>
+          <?php //<li>
+            //<a href="/terms-of-service">Terms of Service</a>
+          //</li> ?>
           <li>
             <a href="/privacy-policy">Privacy Policy</a>
           </li>
