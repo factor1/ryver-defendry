@@ -47,11 +47,12 @@
       input {
         height: rem(37);
         color: $white;
+        font-weight: 700;
         background-color: $primary;
         border: 1px solid $primary;
 
         &:hover {
-          color: $primary;
+          color: $white;
           background-color: $white;
         }
       }
