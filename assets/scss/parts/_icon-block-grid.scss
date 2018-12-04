@@ -3,7 +3,11 @@
  */
 
 .icon-block-grid {
-  padding: rem(50) 0;
+  .row {
+    padding: rem(50) 0;
+    border-top: rem(1) solid $offwhite;
+    border-bottom: rem(1) solid $offwhite;
+  }
 
   .col-5 {
     display: flex;
@@ -24,7 +28,7 @@
   &:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: rem(-10);
     left: auto;
     right: auto;
     margin: auto;
@@ -43,7 +47,7 @@
       padding-top: rem(25);
       padding-bottom: rem(25);
     }
-    
+
     .icon {
       flex: 0 1 10%;
     }

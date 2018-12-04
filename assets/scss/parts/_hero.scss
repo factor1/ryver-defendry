@@ -24,7 +24,11 @@
 @media screen and (max-width: $small-breakpoint) {
   .hero {
     &__logo {
-      max-width: rem(350);
+      max-width: unset;
+
+      img {
+        max-width: rem(250);
+      }
     }
 
     .ryver-power {
