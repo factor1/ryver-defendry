@@ -18,6 +18,9 @@ if (!(is_admin() )) {
  * Link to all theme CSS files.
  */
 function prelude_theme_scripts() {
+  // Google Fonts
+  wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Overpass:300,400,600,700,900', array(), THEME_VERSION );
+
   // CSS
   wp_enqueue_style('prelude-css', get_template_directory_uri() . '/assets/css/theme.min.css', array(), THEME_VERSION );
   wp_enqueue_style('aos-css', get_template_directory_uri() . '/assets/css/aos.min.css', array(), THEME_VERSION );

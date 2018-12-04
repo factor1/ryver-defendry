@@ -1,25 +1,27 @@
 /*----------------------------------------------------------------------------
   Buttons
 ----------------------------------------------------------------------------*/
-
 .button {
-  display: inline-block;
   position: relative;
+  top: 0;
+  display: inline-block;
+  margin: 0 auto;
   padding: rem(15) rem(25);
   border-radius: rem(5);
   text-align: center;
-  margin: 0 auto;
   line-height: rem(25);
   font-size: rem(20);
+  font-weight: 700;
+  text-transform: uppercase;
   transition: all 0.2s ease !important;
 
   &--primary {
     color: $white;
-    background-color: $primary;
+    background: $primary;
+    background: linear-gradient($primary, $darkPrimary);
 
     &:hover {
-      margin-top: rem(-8) !important;
-      margin-bottom: rem(8) !important;
+      top: rem(-8);
       color: $white;
       box-shadow: 0 20px 40px -20px rgba(0,0,0, 0.6);
     }
@@ -44,6 +46,19 @@
     &:hover {
       color: $secondary;
       background-color: $white;
+    }
+  }
+
+  &--white {
+    color: $primary;
+    background-color: $offwhite;
+    border: 1px solid $offwhite;
+
+    &:hover {
+      top: rem(-8);
+      color: $primary;
+      background-color: $white;
+      box-shadow: 0 20px 40px -20px rgba(0,0,0, 0.6);
     }
   }
 }

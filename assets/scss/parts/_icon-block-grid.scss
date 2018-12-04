@@ -1,0 +1,55 @@
+/*
+ * Icon Block Grid
+ */
+
+.icon-block-grid {
+  padding: rem(50) 0;
+
+  .col-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+  }
+
+  .icon {
+    flex: 0 1 16.7%;
+  }
+
+  .text {
+    flex: 0 1 75%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    margin: auto;
+    width: rem(20);
+    height: rem(20);
+    border-radius: 50%;
+    background: $primary;
+    background: linear-gradient($primary, $darkPrimary);
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .icon-block-grid {
+    .col-5 {
+      padding-top: rem(25);
+      padding-bottom: rem(25);
+    }
+    
+    .icon {
+      flex: 0 1 10%;
+    }
+
+    .text {
+      flex: 0 1 85%;
+    }
+  }
+}

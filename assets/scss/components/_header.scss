@@ -7,7 +7,7 @@ header {
 
   h3 {
     text-transform: uppercase;
-    font: $light rem(30)/rem(30) $lato;
+    font: $light rem(30)/rem(30) $overpass;
 
     a:hover {
       color: $white;
@@ -29,7 +29,7 @@ header {
 
       a {
         margin: 0;
-        font: $light rem(26)/rem(30) $lato;
+        font: $light rem(26)/rem(30) $overpass;
         color: $white;
 
         &:after {

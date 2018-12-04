@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="text-center">
-        <a class="button button--tertiary" href="#learn-more">Learn More</a>
+        <a class="button button--primary" href="#learn-more">Learn More</a>
       </div>
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__social-links">
@@ -49,7 +49,7 @@
         		<div class="response" id="mce-success-response" style="display:none"></div>
         	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bbfac7d1353c0b75fa67a2cab_9be6003dd5" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button--secondary"></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button--primary"></div>
         </div>
       </form>
       </div>
@@ -69,7 +69,7 @@
       </div>
       <div class="row">
         <div class="col-2 sm-col-2 columns stretch">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/email.svg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" />
         </div>
         <div class="col-10 sm-col-10 col-no-pad columns stretch">
           <a href="mailto:info@iotalk.com">info@iotalk.com</a>
@@ -77,7 +77,7 @@
       </div>
       <div class="row">
         <div class="col-2 sm-col-2 columns stretch">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/map-marker.svg" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/address.svg" />
         </div>
         <div class="col-10 sm-col-10 col-no-pad columns stretch">
           <a href="https://www.google.com/maps/place/14300+N+Northsight+Blvd+%23105,+Scottsdale,+AZ+85260/data=!4m2!3m1!1s0x872b75b21e88f1ef:0x48559be651cede08?sa=X&ved=2ahUKEwix6KHT8OXdAhVrIjQIHT7lDVcQ8gEwAHoECAAQAQ">14300 N Northsight Blvd #105<br>Scottsdale, AZ 85260</a>
@@ -86,10 +86,13 @@
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__logo">
       <a href="/" class="text-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-footer.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo-dark.svg" />
       </a>
+      <p class="text-center">
+        <span>The First</span> Active Shooter Prevention System
+      </p>
       <a class="text-center" href="https://ryver.com/">
-        <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/PoweredByRyver-Logo-LightBG-2.svg" />
+        <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
       </a>
     </div>
   </div>

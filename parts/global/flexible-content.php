@@ -23,6 +23,26 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'cta' ) :
          get_template_part('parts/global/partials/cta');
 
+       // Video Modal
+       elseif( get_row_layout() == 'video_modal' ) :
+         get_template_part('parts/global/partials/video-modal');
+
+       // Two Column Layout
+       elseif( get_row_layout() == 'two_column_layout' ) :
+         get_template_part('parts/global/partials/two-column-layout');
+
+       // Centered Column
+       elseif( get_row_layout() == 'centered_column' ) :
+         get_template_part('parts/global/partials/centered-column');
+
+       // Icon Block Grid
+       elseif( get_row_layout() == 'icon_block_grid' ) :
+         get_template_part('parts/global/partials/icon-block-grid');
+
+       // Full Width Background
+       elseif( get_row_layout() == 'full_width_background_section' ) :
+         get_template_part('parts/global/partials/full-width-background');
+
        endif;
 
      endwhile; // close the loop of flexible content

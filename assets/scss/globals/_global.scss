@@ -197,6 +197,14 @@ sup {
   }
 }
 
+.remodal-wrapper.remodal-is-opened {
+  align-items: center;
+
+  .flex-video {
+    margin-bottom: 0;
+  }
+}
+
 .response {
   margin-top: 0;
   padding-top: 0;

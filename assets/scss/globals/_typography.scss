@@ -3,51 +3,54 @@
 ------------------------------------------------------------------------------*/
 // Headers
 h1 {
-  margin: 0;
-  margin-bottom: 15px;
-  font: $light rem(70)/rem(72) $lato;
-  color: $secondary;
+  margin: 0 0 15px;
+  font: $light rem(70)/rem(72) $overpass;
+  color: $white;
+
+  span {
+    color: $primary;
+  }
 }
 
 h2 {
-  margin: 0;
-  margin-bottom: rem(15);
-  font: $regular rem(30)/rem(38) $lato;
+  margin: 0 0 rem(15);
+  font: $bold rem(30)/rem(38) $overpass;
   color: $primary;
 }
 
 h3 {
   margin: 0;
-  font: $regular rem(20)/rem(24) $lato;
+  font: $regular rem(20)/rem(24) $overpass;
   color: $dark;
 }
 
 h4 {
   margin: 0;
   margin-bottom: rem(25);
-  font: $light rem(35)/rem(40) $lato;
-  color: $secondary;
+  font: $light rem(35)/rem(40) $overpass;
+  color: $primary;
 }
 
 h5 {
   margin: 0;
-  font: $light rem(14)/rem(16) $lato;
-  color: $secondary;
+  font: $light rem(14)/rem(16) $overpass;
+  color: $darkPrimary;
   opacity: 0.6;
 }
 
 h6 {
   margin-top: 0;
   margin-bottom: rem(20);
-  font: $bold rem(18)/rem(20) $lato;
-  color: $copyColor;
+  font: $bold rem(18)/rem(20) $overpass;
+  letter-spacing: .1em;
+  color: $lightGray;
   text-transform: uppercase;
 }
 
 // Body Copy
 p, ul, ol, li {
   margin: 0 0 rem(15);
-  font: $regular rem(16)/rem(20) $lato;
+  font: $regular rem(16)/1.5 $overpass;
   letter-spacing: rem(0.5);
   color: $copyColor;
 
@@ -63,14 +66,14 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 
 // Links
 a {
-  font-family: $lato;
+  font-family: $overpass;
   color: $primary;
   text-decoration: none;
   transition: all .25s ease;
   cursor: pointer;
 
   &:hover {
-    color: $secondary;
+    color: $darkPrimary;
   }
 }
 

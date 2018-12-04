@@ -23,10 +23,7 @@
 
 @media screen and (max-width: $small-breakpoint) {
   .hero {
-    background: $offwhite !important;
-
     &__logo {
-      margin: auto;
       max-width: rem(350);
     }
 

@@ -1,4 +1,7 @@
 {
+  "globals": {
+    "bowser": true,
+  },
   "rules": {
     "comma-dangle": [2,"always"],
     "no-cond-assign": [1,"except-parens"],
