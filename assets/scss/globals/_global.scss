@@ -100,6 +100,17 @@ sup {
   opacity: 0;
   background: transparent;
 
+  &.remodal--video {
+    max-width: rem(1280);
+    max-height: unset;
+    margin: rem(30) !important;
+    width: 100%;
+
+    .flex-video {
+      width: 100%;
+    }
+  }
+
   &__header {
     padding: rem(20);
     border-radius: rem(5) rem(5) 0 0;
@@ -185,6 +196,7 @@ sup {
   top: -20px;
   right: -20px;
   transform: rotate(45deg);
+  z-index: 1;
 
   img {
     width: rem(40);
