@@ -185,8 +185,11 @@ if( have_rows('flexible_content') ):  while ( have_rows('flexible_content') ) : 
     $video = get_sub_field('video'); ?>
 
     <div class="remodal-bg">
-      <div class="remodal" data-remodal-id="video-modal">
-        <button data-remodal-action="close" class="remodal-close"></button>
+      <div class="remodal remodal--video" data-remodal-id="video-modal">
+        <div data-remodal-action="close" class="remodal-close">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
+          <div class="close-bg"></div>
+        </div>
 
         <div class="flex-video">
           <?php echo $video; ?>
