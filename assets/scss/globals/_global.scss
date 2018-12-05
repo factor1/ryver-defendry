@@ -103,8 +103,8 @@ sup {
   &.remodal--video {
     max-width: rem(1280);
     max-height: unset;
-    margin: rem(30) !important;
-    width: 100%;
+    margin: rem(30) auto !important;
+    width: 90%;
 
     .flex-video {
       width: 100%;
