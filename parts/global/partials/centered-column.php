@@ -30,7 +30,9 @@ if( have_rows('content_blocks') ) : ?>
           $dotClass = $divider ? ' class="dot"' : ''; ?>
 
           <div<?php echo $dotClass; ?> data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-            <img src="<?php echo $img[0]; ?>" alt="Column image">
+            <?php if( $img ) : ?>
+              <img src="<?php echo $img[0]; ?>" alt="Column image">
+            <?php endif; ?>
 
             <?php echo $content; ?>
           </div>
