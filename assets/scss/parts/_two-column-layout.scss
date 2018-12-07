@@ -6,7 +6,7 @@
   padding: rem(50) 0;
 
   h1 {
-    margin-bottom: rem(100);
+    margin-bottom: rem(10);
     color: $gray;
   }
 
@@ -21,10 +21,6 @@
 @media screen and (max-width: $small-breakpoint) {
   .two-column-layout {
     padding: 0 0 rem(50);
-
-    h1 {
-      margin-bottom: rem(50);
-    }
 
     .col-5:last-of-type {
       margin-top: rem(30);

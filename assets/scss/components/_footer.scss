@@ -150,6 +150,10 @@
   p span {
     color: $primary;
   }
+
+  sup {
+    top: rem(-6);
+  }
 }
 
 // Media Queries
