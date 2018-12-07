@@ -89,7 +89,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo-dark.svg" />
       </a>
       <p class="text-center">
-        The Only Active Shooter Detection System <span>with ART</span>
+        The Only Active Shooter Detection System <span>with ART<sup>TM</sup></span>
       </p>
       <a class="text-center" href="https://ryver.com/">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
