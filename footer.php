@@ -91,7 +91,7 @@
       <p class="text-center">
         The Only Active Shooter Detection System <span>with ART<sup>TM</sup></span>
       </p>
-      <a class="text-center" href="https://ryver.com/">
+      <a class="text-center" href="https://iotalk.com/">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
       </a>
     </div>
