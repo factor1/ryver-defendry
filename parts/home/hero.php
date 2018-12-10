@@ -12,7 +12,7 @@
     <a href="https://iotalk.com/">
       <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-white.svg" />
     </a>
-    <div class="row">
+    <div class="row hero__row">
       <div class="col-7 md-col-8 sm-text-center">
         <div class="hero__logo sm-text-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo.svg" alt="Defendry" />

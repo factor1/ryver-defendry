@@ -15,6 +15,12 @@
     color: $gray;
   }
 
+  &__headline {
+    &--small {
+      font-size: rem(48);
+    }
+  }
+
   .col-8 div {
     position: relative;
     padding-bottom: rem(20);
