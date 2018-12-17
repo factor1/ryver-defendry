@@ -27,6 +27,7 @@
 
     &.dot {
       padding: rem(100) rem(20);
+      border-bottom: .0625rem solid #f0f0fa;
 
       &:after {
         content: '';
