@@ -10,7 +10,7 @@
 
   <section class="container hero" data-aos="fade-in" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
     <a href="https://iotalk.com/">
-      <img style="opacity:.25;" class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-white.svg" />
+      <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-white.svg" />
     </a>
     <div class="row hero__row">
       <div class="col-7 md-col-8 sm-text-center">
