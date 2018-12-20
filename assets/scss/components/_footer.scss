@@ -157,6 +157,8 @@
 
   sup {
     top: rem(-6);
+    // Hiding the TM per client request
+    display: none;
   }
 }
 
