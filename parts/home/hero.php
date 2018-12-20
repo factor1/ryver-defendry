@@ -9,7 +9,7 @@
 ?>
 
   <section class="container hero" data-aos="fade-in" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
-    <a href="https://iotalk.com/">
+    <a href="https://iotalk.com/" target="_blank">
       <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-white.svg" />
     </a>
     <div class="row hero__row">

@@ -18,16 +18,16 @@
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__social-links">
       <h6>Stay Connected</h6>
-      <a href="https://fb.me/IoTalkApp">
+      <a href="https://fb.me/IoTalkApp" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" />
       </a>
-      <a href="https://twitter.com/IoTalkApp">
+      <a href="https://twitter.com/IoTalkApp" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" />
       </a>
-      <a href="https://www.linkedin.com/company/iotalk">
+      <a href="https://www.linkedin.com/company/iotalk" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.svg" />
       </a>
-      <a href="https://www.youtube.com/channel/UCV8_TK0fXQMQ3yTR8Vu2wVw">
+      <a href="https://www.youtube.com/channel/UCV8_TK0fXQMQ3yTR8Vu2wVw" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube.svg" />
       </a>
 
@@ -80,7 +80,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/address.svg" />
         </div>
         <div class="col-10 sm-col-10 col-no-pad columns stretch">
-          <a href="https://www.google.com/maps/place/14300+N+Northsight+Blvd+%23105,+Scottsdale,+AZ+85260/data=!4m2!3m1!1s0x872b75b21e88f1ef:0x48559be651cede08?sa=X&ved=2ahUKEwix6KHT8OXdAhVrIjQIHT7lDVcQ8gEwAHoECAAQAQ">14300 N Northsight Blvd #105<br>Scottsdale, AZ 85260</a>
+          <a href="https://www.google.com/maps/place/14300+N+Northsight+Blvd+%23105,+Scottsdale,+AZ+85260/data=!4m2!3m1!1s0x872b75b21e88f1ef:0x48559be651cede08?sa=X&ved=2ahUKEwix6KHT8OXdAhVrIjQIHT7lDVcQ8gEwAHoECAAQAQ" target="_blank">14300 N Northsight Blvd #105<br>Scottsdale, AZ 85260</a>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
       <p class="text-center">
         The Only Active Shooter Detection System <span>with ART<sup>TM</sup></span>
       </p>
-      <a class="text-center" href="https://iotalk.com/">
+      <a class="text-center" href="https://iotalk.com/" target="_blank">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
       </a>
     </div>
