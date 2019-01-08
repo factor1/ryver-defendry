@@ -36,3 +36,8 @@
    * Load shortcodes
    */
   require get_template_directory() . '/inc/shortcodes.php';
+
+  /**
+   * Load ACF
+   */
+  require get_template_directory() . '/inc/acf.php';
