@@ -172,7 +172,7 @@ sup {
 
   .remodal__body {
     .button {
-      height: rem(42);
+      //height: rem(42);
       color: $white;
       background-color: $primary;
       border: 1px solid $primary;
@@ -184,9 +184,22 @@ sup {
       }
     }
 
-    .gfield input {
-      font-size: rem(18);
-      line-height: rem(24);
+    .gfield {
+      input {
+        width: 100%;
+        border-radius: 5px;
+        padding: 12px 10px;
+        font-size: rem(18);
+        line-height: rem(24);
+      }
+      .gfield_checkbox {
+        input[type=checkbox] {
+          margin-top: 0 !important;
+        }
+        label {
+          font-size: rem(18);
+        }
+      }
     }
 
     form {
