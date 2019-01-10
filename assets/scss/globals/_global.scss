@@ -128,7 +128,7 @@ sup {
   }
 
   &__body {
-    max-height: 58vh;
+    max-height: 70vh;
     padding: rem(30);
     border-radius: 0 0 rem(5) rem(5);
     overflow: scroll;
@@ -233,7 +233,7 @@ sup {
   transform: scale(1);
 }
 .remodal-is-initialized {
-  max-height: rem(600);
+  //max-height: rem(600);
 }
 
 .close-bg {
