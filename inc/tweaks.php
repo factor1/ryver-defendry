@@ -31,7 +31,7 @@
     }
     add_action( 'after_setup_theme', 'prelude_features' );
   }
-  
+
   // Set the maximum content width for the theme
   function prelude_content_width() {
     $GLOBALS[ 'content_width' ] = apply_filters( 'prelude_content_width', 1200 );
@@ -127,3 +127,25 @@
     return $buttons;
   }
   add_filter("mce_buttons_3", "enable_more_buttons");
+
+  // Customize Wordpress Admin
+	// add login logo
+	function custom_loginlogo() {
+  	echo '<style type="text/css">
+      #login h1 a,
+    	.login h1 a {
+    		height: 100% !important;
+    		width:100% !important;
+    		background-image: url(' . get_template_directory_uri() . '/assets/img/defendry-logo-dark.svg) !important;
+    		background-postion-x: center !important;
+    		background-size:contain !important;
+    		margin-bottom:10px !important;
+      }
+      #login h1 a,
+    	.login h1 {
+    		width: 320px !important;
+    		Height: 120px !important
+      }
+  	</style>';
+	}
+	add_action('login_head', 'custom_loginlogo');
