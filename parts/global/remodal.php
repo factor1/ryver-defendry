@@ -23,7 +23,7 @@
     </div>
     <div class="remodal__body">
       <?php if($tmm_description) : ?>
-        <p>
+        <p class="text-center">
           <?php echo $tmm_description; ?>
         </p>
       <?php endif; ?>
@@ -57,7 +57,7 @@
     </div>
     <div class="remodal__body">
       <?php if($lm_description) : ?>
-        <p>
+        <p class="text-center">
           <?php echo $lm_description; ?>
         </p>
       <?php endif; ?>
