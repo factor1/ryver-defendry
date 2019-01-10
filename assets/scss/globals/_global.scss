@@ -140,6 +140,8 @@ sup {
     }
   }
 
+  // Old MailChimp styling
+
   #mc_embed_signup {
     .clear {
       text-align: center;
@@ -161,6 +163,56 @@ sup {
     .mc-field-group input {
       font-size: rem(18);
       line-height: rem(24);
+    }
+
+    form {
+      padding: 0 !important;
+    }
+  }
+
+  .remodal__body {
+    .button {
+      //height: rem(42);
+      padding: rem(15) rem(25) !important;
+      color: $white;
+      background-color: $primary;
+      border: 1px solid $primary;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: $white !important;
+        color: $primary;
+      }
+    }
+
+    .gform_wrapper {
+      margin: 0 !important;
+    }
+
+    .gform_footer {
+      text-align: center !important;
+    }
+
+    .gfield {
+      margin-top: 0 !important;
+
+      input {
+        width: 100%;
+        margin-top: 0 !important;
+        border: 1px solid $lightGray;
+        border-radius: 5px !important;
+        padding: 12px 10px !important;
+        font-size: rem(18);
+        line-height: rem(24);
+      }
+      .gfield_checkbox {
+        input[type=checkbox] {
+          margin-top: 0 !important;
+        }
+        label {
+          font-size: rem(18);
+        }
+      }
     }
 
     form {
