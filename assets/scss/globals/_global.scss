@@ -338,8 +338,15 @@ sup {
 
 // Safari Fix on Modals
 .safari {
-  .remodal .remodal__body .gfield input {
-    line-height: 2rem !important;
+  .remodal .remodal__body {
+    .gfield input {
+      line-height: 2rem !important;
+    }
+
+    .button {
+      padding: rem(10) rem(25) !important;
+      line-height: 2rem !important;
+    }
   }
 }
 
