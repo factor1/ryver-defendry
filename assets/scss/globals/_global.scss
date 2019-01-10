@@ -174,6 +174,7 @@ sup {
     .button {
       //height: rem(42);
       padding: rem(15) rem(25) !important;
+      margin: 0 !important;
       color: $white;
       background-color: $primary;
       border: 1px solid $primary;
@@ -340,6 +341,7 @@ sup {
 .safari {
   .remodal .remodal__body {
     .gfield input {
+      padding: rem(8) rem(10) !important;
       line-height: 2rem !important;
     }
 
