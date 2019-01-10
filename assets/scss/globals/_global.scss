@@ -336,6 +336,13 @@ sup {
     opacity: 1;
 }
 
+// Safari Fix on Modals
+.safari {
+  .remodal .remodal__body .gfield input {
+    line-height: 2rem !important;
+  }
+}
+
 @media screen and (max-width: $small-breakpoint) {
   .remodal {
     width: 90vw;
