@@ -140,6 +140,10 @@ sup {
     }
   }
 
+  .gform_wrapper .gfield_required {
+    display: none;
+  }
+
   // Old MailChimp styling
 
   #mc_embed_signup {
