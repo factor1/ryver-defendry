@@ -128,7 +128,7 @@ sup {
   }
 
   &__body {
-    max-height: 58vh;
+    max-height: 70vh;
     padding: rem(30);
     border-radius: 0 0 rem(5) rem(5);
     overflow: scroll;
@@ -138,6 +138,10 @@ sup {
       font-size: rem(18);
       text-align: left;
     }
+  }
+
+  .gform_wrapper .gfield_required {
+    display: none;
   }
 
   // Old MailChimp styling
@@ -170,6 +174,8 @@ sup {
     }
   }
 
+  // Gravity Forms Styling
+
   .remodal__body {
     .button {
       //height: rem(42);
@@ -201,7 +207,7 @@ sup {
       input {
         width: 100%;
         margin-top: 0 !important;
-        border: 1px solid $lightGray;
+        border: 1px solid #dde2ea;
         border-radius: 5px !important;
         padding: 12px 10px !important;
         font-size: rem(18);
@@ -233,7 +239,7 @@ sup {
   transform: scale(1);
 }
 .remodal-is-initialized {
-  max-height: rem(600);
+  //max-height: rem(600);
 }
 
 .close-bg {
