@@ -4981,12 +4981,12 @@ jQuery( document ).ready(function( $ ) {
 	$('.gform_button[value="Submit"]').attr('disabled', 'disabled');
 
 	// Check required fields and then remove the disabled from the submit button
-	$('.remodal form input[aria-required="true"]').keyup(function() {
+	$('.remodal #gform_1 input[aria-required="true"]').keyup(function() {
 
 		console.log('form 2');
 
 	  var empty = false;
-	  $('form input[aria-required="true"]').each(function() {
+	  $('.remodal #gform_1 input[aria-required="true"]').each(function() {
 	    if ($(this).val() == '') {
 	      empty = true;
 	    }
