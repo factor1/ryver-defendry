@@ -4983,7 +4983,7 @@ jQuery( document ).ready(function( $ ) {
 	// Check required fields and then remove the disabled from the submit button
 	$('.remodal #gform_1 input[aria-required="true"]').keyup(function() {
 
-		console.log('form 2');
+		console.log('form 3');
 
 	  var empty = false;
 	  $('.remodal #gform_1 input[aria-required="true"]').each(function() {
