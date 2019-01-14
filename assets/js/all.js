@@ -4976,7 +4976,24 @@ jQuery( document ).ready(function( $ ) {
 	}
 	setTimeout(explode, 1300);
 
+	// Remodal Forms Submit button
+	$('.remodal form input[aria-required="true"]').keyup(function() {
 
+		console.log('form 1');
+
+	  var empty = false;
+	  $('form input[aria-required="true"]').each(function() {
+	    if ($(this).val() == '') {
+	      empty = true;
+	    }
+	  });
+
+	  if (empty) {
+	    $('.gform_button[value="Submit"]').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	  } else {
+	    $('.gform_button[value="Submit"]').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	  }
+});
 
 	// Slick Slider
   // iPhone
