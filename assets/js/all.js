@@ -4999,8 +4999,6 @@ jQuery( document ).ready(function( $ ) {
 // Check required fields on "Learn More" Form and then remove the disabled from the submit button
 $('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
 
-	console.log('form 5');
-
 	var empty = false;
 	$('.remodal #gform_2 input[aria-required="true"]').each(function() {
 		if ($(this).val() == '') {
