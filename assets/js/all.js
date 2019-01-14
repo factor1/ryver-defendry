@@ -4991,15 +4991,15 @@ jQuery( document ).ready(function( $ ) {
 	  });
 
 	  if (empty) {
-	    $('.gform_button[value="Submit"]').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	    $('#gform_1 .gform_button[value="Submit"]').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
 	  } else {
-	    $('.gform_button[value="Submit"]').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	    $('#gform_1 .gform_button[value="Submit"]').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
 	  }
 });
 // Check required fields on "Learn More" Form and then remove the disabled from the submit button
 $('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
 
-	console.log('form 4');
+	console.log('form 5');
 
 	var empty = false;
 	$('.remodal #gform_2 input[aria-required="true"]').each(function() {
@@ -5009,9 +5009,9 @@ $('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
 	});
 
 	if (empty) {
-		$('.gform_button[value="Submit"]').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+		$('#gform_2 .gform_button[value="Submit"]').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
 	} else {
-		$('.gform_button[value="Submit"]').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+		$('#gform_2 .gform_button[value="Submit"]').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
 	}
 });
 
