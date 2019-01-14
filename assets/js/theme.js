@@ -58,7 +58,42 @@ jQuery( document ).ready(function( $ ) {
 	}
 	setTimeout(explode, 1300);
 
+	// Remodal Forms Submit button
+	// Set Submit Button to disabled until required fields are filled
+	$('.gform_button[value="Submit"]').attr('disabled', 'disabled');
 
+	// Check required fields on "Tell Me More" Form and then remove the disabled from the submit button
+	$('.remodal #gform_1 input[aria-required="true"]').keyup(function() {
+
+	  var empty = false;
+	  $('.remodal #gform_1 input[aria-required="true"]').each(function() {
+	    if ($(this).val() == '') {
+	      empty = true;
+	    }
+	  });
+
+	  if (empty) {
+	    $('#gform_1 .gform_button[value="Submit"]').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	  } else {
+	    $('#gform_1 .gform_button[value="Submit"]').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	  }
+});
+// Check required fields on "Learn More" Form and then remove the disabled from the submit button
+$('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
+
+	var empty = false;
+	$('.remodal #gform_2 input[aria-required="true"]').each(function() {
+		if ($(this).val() == '') {
+			empty = true;
+		}
+	});
+
+	if (empty) {
+		$('#gform_2 .gform_button[value="Submit"]').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	} else {
+		$('#gform_2 .gform_button[value="Submit"]').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+	}
+});
 
 	// Slick Slider
   // iPhone

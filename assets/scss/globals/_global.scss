@@ -177,6 +177,17 @@ sup {
   // Gravity Forms Styling
 
   .remodal__body {
+
+    .gform_button[disabled="disabled"] {
+      opacity: 0.5 !important;
+      cursor: default;
+
+      &:hover {
+        color: $white !important;
+        background-color: $primary !important;
+      }
+    }
+    
     .button {
       //height: rem(42);
       padding: rem(15) rem(25) !important;
