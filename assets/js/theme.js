@@ -95,15 +95,6 @@ $('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
 	}
 });
 
-//Remodal cancel close event on form submission in order to display errors
-$(document).on('confirmation', '.remodal', function (e) {
-	console.log('Confirmation button is clicked 1');
-	if(!validate(foo))
-		modal_var.settings.closeOnConfirm = false;
-		e.preventDefault();
-		e.stopPropagation();
-});
-
 	// Slick Slider
   // iPhone
   $('.iphone-slider').slick({
