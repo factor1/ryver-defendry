@@ -4977,9 +4977,13 @@ jQuery( document ).ready(function( $ ) {
 	setTimeout(explode, 1300);
 
 	// Remodal Forms Submit button
+	// Set Submit Button to disabled until required fields are filled
+	$('.gform_button[value="Submit"]').attr('disabled', 'disabled');
+
+	// Check required fields and then remove the disabled from the submit button
 	$('.remodal form input[aria-required="true"]').keyup(function() {
 
-		console.log('form 1');
+		console.log('form 2');
 
 	  var empty = false;
 	  $('form input[aria-required="true"]').each(function() {
