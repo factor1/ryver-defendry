@@ -212,6 +212,7 @@ sup {
       transition: all 0.2s ease;
 
       &:hover {
+        cursor: pointer;
         background-color: $white !important;
         color: $primary;
       }
