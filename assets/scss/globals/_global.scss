@@ -138,6 +138,11 @@ sup {
       font-size: rem(18);
       text-align: left;
     }
+
+    &:after {
+      content: "";
+      position: relative;
+    }
   }
 
   .gform_wrapper .gfield_required {
@@ -187,7 +192,7 @@ sup {
         background-color: $primary !important;
       }
     }
-    
+
     .button {
       //height: rem(42);
       padding: rem(15) rem(25) !important;
