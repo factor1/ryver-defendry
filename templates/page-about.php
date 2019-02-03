@@ -1,6 +1,7 @@
 <?php
   /**
    * The about page template.
+   * Template Name: About
    *
    * Used when a default template individual page is queried.
    */
