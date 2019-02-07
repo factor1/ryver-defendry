@@ -50,7 +50,12 @@
 	.page-template-page-partner {
 		.hero__row {background: none !important;}
 		
-		
+		.fifty-fifty .row div div ul {
+			li {
+				// custom marker
+				text-align: left
+			}
+		}
 	
 	}	
 }
