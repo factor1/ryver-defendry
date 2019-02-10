@@ -5,6 +5,33 @@
 .video-modal {
   padding: rem(100) 0 rem(300);
 
+  &__content {
+    background: rgba(255,255,255,0.3);
+
+    // Custom red check bullet point styles
+    ul {
+  		margin: 0;
+  		padding:0 !important;
+
+  		li {
+  			// custom marker
+
+  			list-style: none;
+  			margin-left: 0px;
+  			padding-left: 30px;
+  			background: url('../img/checkmark.svg') no-repeat;
+  			background-position-y: 4px;
+  			background-size: 20px 20px;
+  			display: block;
+
+  			strong {
+  				color: $primary;
+  				font-weight: 900;
+  			}
+  		}
+  	}
+  }
+
   h1 b {
     font-weight: 900;
   }
