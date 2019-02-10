@@ -10,7 +10,13 @@
     padding: rem(32);
     background: rgba(255,255,255,0.8);
 
+    p {
+      color: $gray;
+    }
+
     ul li {
+      color: $gray;
+
       &:last-of-type {
         margin-bottom: 2px;
       }
