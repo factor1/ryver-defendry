@@ -6,8 +6,15 @@
   padding: rem(100) 0 rem(300);
 
   &__content {
-    background: rgba(255,255,255,0.3);
+    margin-top: rem(32);
     padding: rem(32);
+    background: rgba(255,255,255,0.8);
+
+    ul li {
+      &:last-of-type {
+        margin-bottom: 2px;
+      }
+    }
   }
 
   h1 b {
