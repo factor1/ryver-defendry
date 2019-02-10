@@ -13,7 +13,7 @@
       <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-white.svg" />
     </a>
     <div class="row hero__row">
-      <div class="col-7 md-col-8 sm-text-center">
+      <div class="col-10 md-col-12 sm-text-center hero__row__content">
         <div class="hero__logo sm-text-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-tagline-white.svg" alt="Defendry" />
         </div>

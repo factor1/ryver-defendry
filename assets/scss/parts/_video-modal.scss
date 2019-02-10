@@ -5,6 +5,11 @@
 .video-modal {
   padding: rem(100) 0 rem(300);
 
+  &__content {
+    background: rgba(255,255,255,0.3);
+    padding: rem(32);
+  }
+
   h1 b {
     font-weight: 900;
   }
