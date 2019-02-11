@@ -36,6 +36,10 @@
     &__row {
       padding: rem(70) 0 rem(100);
       background: rgba(0,0,0,0.5);
+
+      &__content {
+        padding-left: 0.8rem;
+      }
     }
 
     &__logo {
