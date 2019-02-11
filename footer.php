@@ -89,7 +89,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo-dark.svg" />
       </a>
       <p class="text-center">
-        Next Generation Surveillance <span>with ART<sup>TM</sup></span>
+        The Only Active Shooter Detection System <span>with ART<sup>TM</sup></span>
       </p>
       <a class="text-center" href="https://iotalk.com/" target="_blank">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
