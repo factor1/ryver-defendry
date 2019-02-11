@@ -1,43 +1,31 @@
 /*----------------------------------------------------------------------------
   Home
 ----------------------------------------------------------------------------*/
-.home-page-contianer {
-  overflow: hidden;
-}
+.home {
 
-.home-page {
-  height: calc(100vh - 122px);
-  align-items: center;
+  .fifty-fifty, .video-modal  {
 
-  #icon1 {
-    opacity: 1;
-    bottom: 15vh;
-    left: 80vw;
-  }
-  #icon2 {
-    opacity: 0.8;
-    bottom: 25vh;
-    left: 10vw;
-  }
-  #icon3 {
-    opacity: 0.6;
-    bottom: 60vh;
-    left: 70vw;
-  }
-  #icon4 {
-    opacity: 0.3;
-    bottom: 70vh;
-    left: 35vw;
-  }
-  #icon5 {
-    opacity: 0.2;
-    bottom: 75vh;
-    left: 90vw;
-  }
-}
+    // Custom red check bullet point styles
+    ul {
+      margin: 0;
+      padding:0 !important;
 
-.home-bg {
-  position: absolute;
-  width: 100%;
-  padding:25% 25%;
+      li {
+        // custom marker
+
+        list-style: none;
+        margin-left: 0px;
+        padding-left: 30px;
+        background: url('../img/checkmark.svg') no-repeat;
+        background-position-y: 4px;
+        background-size: 20px 20px;
+        display: block;
+
+        strong {
+          color: $primary;
+          font-weight: 900;
+        }
+      }
+    }
+  }
 }

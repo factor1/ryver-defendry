@@ -5,6 +5,12 @@
   position: relative;
   padding: rem(70) 0;
 
+  &__row {
+    &__content {
+      padding-left: rem(70);
+    }
+  }
+
   &__logo {
     max-width: rem(240);
   }
