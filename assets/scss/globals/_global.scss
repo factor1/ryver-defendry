@@ -321,6 +321,11 @@ sup {
 // Tool Tip
 .tooltip {
     position: relative;
+    text-decoration: underline;
+
+    strong {
+      color: $primary;
+    }
 }
 
 .tooltiptext {
