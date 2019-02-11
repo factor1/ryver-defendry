@@ -12,7 +12,9 @@
     <div class="row hero__row">
       <div class="col-7 md-col-8 sm-text-center">
         <div class="hero__logo sm-text-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-tagline-dark.svg" alt="Defendry" />
+	        <a href="<?php bloginfo('url');?>">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-tagline-dark.svg" alt="Defendry" />
+	        </a>
         </div>
         <h1 class="hero__headline" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="600">
           <?php echo $header; ?>
