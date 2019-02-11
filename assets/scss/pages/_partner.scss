@@ -1,0 +1,62 @@
+.page-template-page-partner {
+	
+	.hero {padding-bottom:15rem;
+		
+		.hero__row h1.hero__headline {color: $gray !important}
+		
+	// END .hero
+	}
+	
+		// Custom partner bullet point styles
+	.fifty-fifty .row div div ul {
+		margin: 0;
+		padding:0 !important;
+
+	
+	
+		li {
+			// custom marker
+			
+			list-style: none;
+			margin-left: 0px;
+			padding-left: 30px;
+			background: url('../img/checkmark.svg') no-repeat;
+			background-position-y: 4px;
+			background-size: 20px 20px;
+			display: block;
+				
+	
+			
+			strong {
+				color: $primary;
+				font-weight: 900;
+				
+			}
+		}
+	}
+	
+	
+	// Bottom Full Width BG
+
+	.full-width-background p {color: #fff;}
+	
+	
+	.fifty-fifty .row div div ul {
+			li {
+				// custom marker
+				text-align: left
+			}
+		}
+
+// END .page-template-page-partner
+}
+
+
+@media screen and (max-width: 47.9375em) {
+	.page-template-page-partner {
+		.hero__row {background: none !important;}
+		
+		
+	
+	}	
+}
