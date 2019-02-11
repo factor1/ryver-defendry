@@ -1,22 +1,22 @@
 .page-template-page-partner {
-	
+
 	.hero {padding-bottom:15rem;
-		
+
 		.hero__row h1.hero__headline {color: $gray !important}
-		
+
 	// END .hero
 	}
-	
+
 		// Custom partner bullet point styles
 	.fifty-fifty .row div div ul {
 		margin: 0;
 		padding:0 !important;
 
-	
-	
+
+
 		li {
 			// custom marker
-			
+
 			list-style: none;
 			margin-left: 0px;
 			padding-left: 30px;
@@ -24,28 +24,28 @@
 			background-position-y: 4px;
 			background-size: 20px 20px;
 			display: block;
-				
-	
-			
+
+
+
 			strong {
 				color: $primary;
 				font-weight: 900;
-				
+
 			}
 		}
 	}
-	
-	
+
+
 	// Custom partner bullet point styles
 	.fifty-fifty .row div div ul {
 		margin: 0;
 		padding:0 !important;
 
-	
-	
+
+
 		li {
 			// custom marker
-			
+
 			list-style: none;
 			margin-left: 0px;
 			padding-left: 30px;
@@ -53,23 +53,23 @@
 			background-position-y: 4px;
 			background-size: 20px 20px;
 			display: block;
-				
-	
-			
+
+
+
 			strong {
 				color: $primary;
 				font-weight: 900;
-				
+
 			}
 		}
 	}
-	
-	
+
+
 	// Bottom Full Width BG
 
 	.full-width-background p {color: #fff;}
-	
-	
+
+
 	.fifty-fifty .row div div ul {
 			li {
 				// custom marker
@@ -83,14 +83,25 @@
 
 @media screen and (max-width: 47.9375em) {
 	.page-template-page-partner {
+		.hero {
+			padding: rem(240) 0 0;
+		}
+
 		.hero__row {background: none !important;}
-		
+
 		.fifty-fifty .row div div ul {
 			li {
 				// custom marker
 				text-align: left
 			}
 		}
-	
-	}	
+
+		.flexible-content .fifty-fifty:first-of-type {
+			padding-top: 0;
+
+			h1 {
+				padding-top: 0;
+			}
+		}
+	}
 }
