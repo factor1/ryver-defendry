@@ -326,7 +326,7 @@ sup {
 .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: $primary;
+    background-color: $purple;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -357,7 +357,7 @@ sup {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: $primary transparent transparent transparent;
+    border-color: $purple transparent transparent transparent;
 }
 
 .tooltip .tooltiptext {
