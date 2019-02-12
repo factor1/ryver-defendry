@@ -17,11 +17,11 @@ if( have_rows('content_blocks') ) : ?>
 
   <section class="container centered-column<?php echo $bgClass; ?>">
     <div class="row">
-      <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="800">
+      <div class="col-12 sm-col-11 text-center" data-aos="fade-up" data-aos-duration="800">
         <h1 class="centered-column__headline--<?php echo $headlineSize; ?>"><?php echo $headline; ?></h1>
       </div>
 
-      <div class="col-8 col-centered text-center">
+      <div class="col-8 sm-col-11 col-centered text-center">
 
         <?php while( have_rows('content_blocks') ) : the_row();
           $img = wp_get_attachment_image_src(get_sub_field('image'), 'column');

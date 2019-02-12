@@ -21,7 +21,7 @@ if( have_rows('columns') ) :
         $content = get_sub_field('column_content');
         $animation = $i == 1 ? 'fade-right' : 'fade-left'; ?>
 
-        <div class="col-5 sm-col-8 sm-col-centered text-center" data-aos="<?php echo $animation; ?>" data-aos-delay="300" data-aos-duration="800">
+        <div class="col-5 sm-col-10 sm-col-centered text-center" data-aos="<?php echo $animation; ?>" data-aos-delay="300" data-aos-duration="800">
           <div class="two-column-layout__img" style="background: url('<?php echo $img[0]; ?>') center/contain no-repeat"></div>
 
           <h2><?php echo $headline; ?></h2>
