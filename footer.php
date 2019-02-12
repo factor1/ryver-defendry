@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="text-center">
-        <a class="button button--primary" href="#learn-more">Learn More</a>
+        <a class="button button--primary" href="<?php echo esc_url(home_url()); ?>/partner-program">Learn More</a>
       </div>
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__social-links">
