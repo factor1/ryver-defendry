@@ -22,6 +22,10 @@
   .two-column-layout {
     padding: 0 0 rem(50);
 
+    &__img {
+      width: 100%;
+    }
+
     .col-5:last-of-type {
       margin-top: rem(30);
     }
