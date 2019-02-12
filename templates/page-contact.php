@@ -1,6 +1,7 @@
 <?php
   /**
    * The default page template.
+   * Template Name: Contact
    *
    * Used when a default template individual page is queried.
    */
