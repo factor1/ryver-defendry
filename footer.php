@@ -13,7 +13,8 @@
         </div>
       </div>
       <div class="text-center">
-        <a class="button button--primary" href="#learn-more">Learn More</a>
+        <?php $link = is_page_template('templates/page-partner.php') ? '#learn-more' : esc_url(home_url()) . '/partner-program'; ?>
+        <a class="button button--primary" href="<?php echo $link; ?>">Learn More</a>
       </div>
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__social-links">
@@ -92,7 +93,7 @@
         Next Generation Surveillance <span>with ART<sup>TM</sup></span>
       </p>
       <a class="text-center" href="https://iotalk.com/" target="_blank">
-        <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
+        <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-gray.svg" />
       </a>
     </div>
   </div>
