@@ -9,9 +9,12 @@
 ?>
 
   <section class="container hero" data-aos="fade-in" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
+
+    <!-- "Powered By" Logo in home hero currently hidden via CSS -->
     <a href="https://iotalk.com/" target="_blank">
       <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-white.svg" />
     </a>
+
     <div class="row hero__row">
       <div class="col-10 md-col-12 sm-text-center hero__row__content">
         <div class="hero__logo sm-text-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
