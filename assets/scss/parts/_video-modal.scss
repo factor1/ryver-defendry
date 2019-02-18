@@ -97,8 +97,15 @@
         li {
           max-width: 100%;
           margin-bottom: 30px;
+          padding-bottom: 30px;
           border-right: none !important;
+          border-bottom: 1px solid $white;
           background-position-y: 10px;
+
+          &:last-of-type {
+            margin-bottom: 2px;
+            border-bottom: none !important;
+          }
         }
       }
     }
