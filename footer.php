@@ -92,6 +92,8 @@
       <p class="text-center">
         Next Generation Surveillance <span>with ART<sup>TM</sup></span>
       </p>
+
+      <!-- Powered By logo currently hidden via css -->
       <a class="text-center" href="https://iotalk.com/" target="_blank">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo-gray.svg" />
       </a>
