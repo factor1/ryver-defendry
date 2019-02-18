@@ -9,22 +9,52 @@
     margin-top: rem(32);
     padding: rem(32);
     border-radius: rem(10);
-    background: rgba(255,255,255,0.8);
 
     p {
       color: $gray;
     }
 
-    ul li {
-      color: $purple;
+    // Custom red check bullet point styles
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding:0 !important;
+      text-align: left;
 
-      &:last-of-type {
-        margin-bottom: 2px;
+      li {
+        // custom marker
+
+        list-style: none;
+        margin-left: 0px;
+        margin-bottom: 35px;
+        max-width: 25%;
+        padding: 50px 10px 0;
+        background: url('../img/checkmark--white.svg') no-repeat;
+        background-position-x: 50%;
+        background-size: 30px 30px;
+        display: block;
+        color: $white;
+        text-align: center;
+        text-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+        border-right: 1px solid white;
+
+        strong {
+          font-weight: 900;
+        }
+
+        &:last-of-type {
+          margin-bottom: 2px;
+          border-right: none !important;
+        }
       }
     }
   }
 
   &__headline {
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+
     &--small {
       font-size: rem(48);
     }
@@ -37,5 +67,40 @@
   img {
     width: rem(100);
     margin-bottom: rem(50);
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$medium-breakpoint) {
+  .video-modal {
+
+    &__content {
+      ul {
+        li {
+          max-width: 50%;
+          margin-bottom: 50px;
+
+          &:nth-child(even) {
+            border-right: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:$small-breakpoint) {
+  .video-modal {
+
+    &__content {
+      ul {
+        li {
+          max-width: 100%;
+          margin-bottom: 30px;
+          border-right: none !important;
+          background-position-y: 10px;
+        }
+      }
+    }
   }
 }
