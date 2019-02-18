@@ -24,6 +24,12 @@
     }
   }
 
+  &__headline {
+    &--small {
+      font-size: rem(48);
+    }
+  }
+
   h1 b {
     font-weight: 900;
   }

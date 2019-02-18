@@ -6,6 +6,7 @@
 // Custom Fields
 $img = wp_get_attachment_image_src(get_sub_field('background_image'), 'video_bg');
 $headline = get_sub_field('headline');
+$headlineSize = get_sub_field('headline_size');
 $video = get_sub_field('video');
 $content = get_sub_field('content');
 
@@ -18,7 +19,7 @@ $content = get_sub_field('content');
         <img src="<?php //echo get_template_directory_uri(); ?>/assets/img/play-btn.svg" alt="Play">
       </a> -->
 
-      <h1><?php echo $headline; ?></h1>
+      <h1 class="video-modal__headline--<?php echo $headlineSize; ?>"><?php echo $headline; ?></h1>
     </div>
   </div>
 
