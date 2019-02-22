@@ -10,7 +10,7 @@
 
   <section class="container hero" data-aos="fade-in" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
 
-    <a href="https://iotalk.com/" target="_blank">
+    <a href="https://www.avnet.com" target="_blank">
       <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/avnet-partnership-white.svg" />
     </a>
 
