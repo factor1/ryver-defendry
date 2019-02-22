@@ -20,13 +20,12 @@
   }
 
   .ryver-power {
-    display: none;
     z-index: 1;
     position: absolute;
     max-width: rem(120);
     bottom: 20px;
     right: 20px;
-    opacity: .40;
+    opacity: .7;
   }
 }
 
