@@ -93,7 +93,7 @@
         Next Generation Surveillance <span>with ART<sup>TM</sup></span>
       </p>
 
-      <a class="text-center" href="https://iotalk.com/" target="_blank">
+      <a class="text-center" href="https://www.avnet.com" target="_blank">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/avnet-partnership.svg" />
       </a>
     </div>
