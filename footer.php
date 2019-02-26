@@ -19,16 +19,16 @@
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__social-links">
       <h6>Stay Connected</h6>
-      <a href="https://fb.me/IoTalkApp" target="_blank">
+      <a href="https://fb.me/DefendryART" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" />
       </a>
-      <a href="https://twitter.com/IoTalkApp" target="_blank">
+      <a href="https://twitter.com/DefendryART" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" />
       </a>
-      <a href="https://www.linkedin.com/company/iotalk" target="_blank">
+      <a href="https://www.linkedin.com/company/defendry/" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.svg" />
       </a>
-      <a href="https://www.youtube.com/channel/UCV8_TK0fXQMQ3yTR8Vu2wVw" target="_blank">
+      <a href="https://www.youtube.com/channel/UCBLG_w4PHmPfFiJTUdteo_Q?" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube.svg" />
       </a>
 
