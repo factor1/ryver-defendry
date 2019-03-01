@@ -194,6 +194,12 @@
         display: flex;
         justify-content: center;
       }
+
+      .mc-field-group {
+        margin: auto;
+        width: 80%;
+        max-width: rem(350);
+      }
     }
   }
 }
