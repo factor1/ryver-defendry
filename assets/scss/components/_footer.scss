@@ -167,6 +167,11 @@
   .footer {
     padding-bottom: 0;
 
+    .sm-middle-align {
+      max-width: 60%;
+      margin: auto;
+    }
+
     .col-3 {
       padding: rem(30) !important;
       border-bottom: 2px solid $offwhite;
@@ -182,6 +187,13 @@
         margin-bottom: 15px;
       }
       .copywright-wrap {
+        justify-content: center;
+      }
+    }
+
+    #mc_embed_signup {
+      .clear {
+        display: flex;
         justify-content: center;
       }
     }
