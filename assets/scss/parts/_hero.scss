@@ -31,6 +31,7 @@
 }
 @media screen and (max-width: $medium-breakpoint) {
   .hero {
+    background-position: right center !important;
     padding: 0;
 
     &__row {
