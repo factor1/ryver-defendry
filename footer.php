@@ -58,7 +58,7 @@
       <!--End mc_embed_signup-->
 
     </div>
-    <div class="col-3 md-col-6 sm-col-12 stretch footer__contact">
+    <div class="col-3 md-col-6 sm-col-12 sm-text-center stretch footer__contact">
       <h6>Get in Touch</h6>
       <div class="row" style="display:none;">
         <div class="col-2 sm-col-2 columns stretch">
