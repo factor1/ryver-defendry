@@ -95,6 +95,12 @@ $('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
 	}
 });
 
+// Stop video if modal is closed
+$(".remodal-overlay, .remodal .remodal-close").click( function() {
+	console.log("1");
+  $(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
+});
+
 	// Slick Slider
   // iPhone
   $('.iphone-slider').slick({
