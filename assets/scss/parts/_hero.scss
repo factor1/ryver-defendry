@@ -17,6 +17,7 @@
 
   &__headline {
     margin: rem(30) 0;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
   }
 
   .ryver-power {
@@ -28,18 +29,29 @@
     opacity: .7;
   }
 }
-
-@media screen and (max-width: $small-breakpoint) {
+@media screen and (max-width: $medium-breakpoint) {
   .hero {
+    background-position: right center !important;
     padding: 0;
 
     &__row {
       padding: rem(70) 0 rem(100);
-      background: rgba(0,0,0,0.5);
-      &__content {
-        padding-left: 0.8rem;
-      }
+      background: rgba(43,45,82,0.7);
     }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .hero {
+    // padding: 0;
+    //
+    // &__row {
+    //   padding: rem(70) 0 rem(100);
+    //   background: rgba(0,0,0,0.5);
+    //   &__content {
+    //     padding-left: 0.8rem;
+    //   }
+    // }
 
     &__logo {
       max-width: unset;

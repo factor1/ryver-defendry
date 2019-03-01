@@ -3,6 +3,7 @@
 ------------------------------------------------------------------------------*/
 .fifty-fifty {
   padding: 0 0 rem(50);
+  overflow: hidden;
 
   &.background {
     padding-top: rem(150);

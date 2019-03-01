@@ -72,7 +72,7 @@
         <div class="col-2 sm-col-4 columns stretch">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" />
         </div>
-        <div class="col-10 sm-col-8 col-no-pad columns stretch">
+        <div class="col-10 sm-col-8 sm-text-left col-no-pad columns stretch">
           <a href="mailto:info@defendry.com">info@defendry.com</a>
         </div>
       </div>
@@ -80,7 +80,7 @@
         <div class="col-2 sm-col-4 columns stretch">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/address.svg" />
         </div>
-        <div class="col-10 sm-col-8 col-no-pad columns stretch">
+        <div class="col-10 sm-col-8 sm-text-left col-no-pad columns stretch">
           <a href="https://www.google.com/maps/place/14300+N+Northsight+Blvd+%23105,+Scottsdale,+AZ+85260/data=!4m2!3m1!1s0x872b75b21e88f1ef:0x48559be651cede08?sa=X&ved=2ahUKEwix6KHT8OXdAhVrIjQIHT7lDVcQ8gEwAHoECAAQAQ" target="_blank">14300 N Northsight Blvd #105<br>Scottsdale, AZ 85260</a>
         </div>
       </div>
