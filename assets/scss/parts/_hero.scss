@@ -43,15 +43,12 @@
 
 @media screen and (max-width: $small-breakpoint) {
   .hero {
-    // padding: 0;
-    //
-    // &__row {
-    //   padding: rem(70) 0 rem(100);
-    //   background: rgba(0,0,0,0.5);
-    //   &__content {
-    //     padding-left: 0.8rem;
-    //   }
-    // }
+
+    &__row {
+      &__content {
+        padding-left: 0.8rem;
+      }
+    }
 
     &__logo {
       max-width: unset;
