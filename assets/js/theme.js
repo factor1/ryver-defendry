@@ -100,12 +100,13 @@ $('.remodal-close').click(function() {
 	 var video01 = $("#video01 iframe").attr("src");
 	 $("#video01 iframe").attr("src","");
 	 $("#video01 iframe").attr("src",video01);
+});
 
- $('.remodal-wrapper').click(function() {
+$('.remodal-wrapper').click(function() {
 	 var video01 = $("#video01 iframe").attr("src");
 	 $("#video01 iframe").attr("src","");
 	 $("#video01 iframe").attr("src",video01);
-	});
+});
 
 // $(".remodal-overlay, .remodal .remodal-close").click( function() {
 // 	console.log("1");
