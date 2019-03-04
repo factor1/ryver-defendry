@@ -100,11 +100,12 @@ $(document).on('closed', '.remodal', function (e) {
 
 	// Reason: 'confirmation', 'cancellation'
 	console.log('Modal is closed' + (e.reason ? ', reason: ' + e.reason : ''));
+	$(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
 });
 
 // $(".remodal-overlay, .remodal .remodal-close").click( function() {
 // 	console.log("1");
-//   $(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
+//
 // });
 
 	// Slick Slider
