@@ -96,10 +96,10 @@ $('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
 });
 
 // Stop video if modal is closed
-$(document).on('closed', '.remodal', function (e) {
+$(document).on('closing', '.remodal', function (e) {
 
 	// Reason: 'confirmation', 'cancellation'
-	console.log('Modal is closed' + (e.reason ? ', reason: ' + e.reason : ''));
+	console.log('Modal is closing' + (e.reason ? ', reason: ' + e.reason : ''));
 	// $(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
 });
 
