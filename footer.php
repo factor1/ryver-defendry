@@ -73,7 +73,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" />
         </div>
         <div class="col-10 sm-col-8 sm-text-left col-no-pad columns stretch">
-          <a href="mailto:info@defendry.com">info@defendry.com</a>
+          <a href="mailto:sales@defendry.com">sales@defendry.com</a>
         </div>
       </div>
       <div class="row sm-middle-align">
