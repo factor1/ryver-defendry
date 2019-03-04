@@ -96,16 +96,20 @@ $('.remodal #gform_2 input[aria-required="true"]').keyup(function() {
 });
 
 // Stop video if modal is closed
-$(document).on('closing', '.remodal', function (e) {
+$('.remodal-close').click(function() {
+	 var video01 = $("#video01 iframe").attr("src");
+	 $("#video01 iframe").attr("src","");
+	 $("#video01 iframe").attr("src",video01);
 
-	// Reason: 'confirmation', 'cancellation'
-	console.log('Modal is closing' + (e.reason ? ', reason: ' + e.reason : ''));
-	//$(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
-});
+ $('.remodal-wrapper').click(function() {
+	 var video01 = $("#video01 iframe").attr("src");
+	 $("#video01 iframe").attr("src","");
+	 $("#video01 iframe").attr("src",video01);
+	});
 
 // $(".remodal-overlay, .remodal .remodal-close").click( function() {
 // 	console.log("1");
-//
+// $(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
 // });
 
 	// Slick Slider

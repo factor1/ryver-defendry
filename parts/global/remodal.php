@@ -78,7 +78,7 @@ if( have_rows('flexible_content') ):  while ( have_rows('flexible_content') ) : 
           <div class="close-bg"></div>
         </div>
 
-        <div class="flex-video">
+        <div class="flex-video" id="video01">
           <?php echo $video; ?>
         </div>
       </div>
