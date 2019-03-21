@@ -3,7 +3,7 @@
 ----------------------------------------------------------------------------*/
 .home {
 
-  .fifty-fifty, .video-modal  {
+  .fifty-fifty {
 
     // Custom red check bullet point styles
     ul {
@@ -21,7 +21,7 @@
         background-position-y: 4px;
         background-size: 20px 20px;
         display: block;
-        color: $purple;
+        color: $darkPurple;
 
         strong {
           font-weight: 900;

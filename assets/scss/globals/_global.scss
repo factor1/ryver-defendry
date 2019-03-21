@@ -147,6 +147,7 @@ sup {
       right: 0;
       left: 0;
       bottom: 0;
+      border-radius: 0 0 rem(5) rem(5);
       background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%);
       background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,1) 100%);
       background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,1) 100%);
@@ -321,17 +322,13 @@ sup {
 // Tool Tip
 .tooltip {
     position: relative;
-    text-decoration: underline;
-
-    strong {
-      color: $primary;
-    }
+    color: $primary;
 }
 
 .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: $purple;
+    background-color: $darkPurple;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -362,7 +359,7 @@ sup {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: $purple transparent transparent transparent;
+    border-color: $darkPurple transparent transparent transparent;
 }
 
 .tooltip .tooltiptext {
@@ -392,5 +389,9 @@ sup {
 @media screen and (max-width: $small-breakpoint) {
   .remodal {
     width: 90vw;
+
+    &__body {
+      max-height: 60vh;
+    }
   }
 }

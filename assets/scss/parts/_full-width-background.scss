@@ -10,18 +10,37 @@
     color: $white;
     font-size: rem(48);
     line-height: rem(58);
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 
     b {
       font-weight: 900;
     }
   }
 
+  p {
+    color: $white;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  }
+
   .button {
     margin-top: rem(40);
+  }
+
+  &--middle-position {
+      padding: 20% 0 20% !important;
   }
 }
 
 // Media Queries
+@media screen and (min-width: rem(1500)) {
+  .full-width-background {
+
+    &--middle-position {
+        padding: 25% 0 !important;
+    }
+  }
+}
+
 @media screen and (max-width: $small-breakpoint) {
   .full-width-background {
     margin-top: rem(40);

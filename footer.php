@@ -13,21 +13,22 @@
         </div>
       </div>
       <div class="text-center">
-        <a class="button button--primary" href="#learn-more">Learn More</a>
+        <?php $link = is_page_template('templates/page-partner.php') ? '#learn-more' : esc_url(home_url()) . '/partner-program'; ?>
+        <a class="button button--primary" href="<?php echo $link; ?>">Learn More</a>
       </div>
     </div>
-    <div class="col-3 md-col-6 sm-col-12 stretch footer__social-links">
-      <h6>Stay Connected</h6>
-      <a href="https://fb.me/IoTalkApp" target="_blank">
+    <div class="col-3 md-col-6 sm-col-12 stretch sm-text-center footer__social-links">
+      <h6 class="sm-text-center">Stay Connected</h6>
+      <a href="https://fb.me/DefendryART" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" />
       </a>
-      <a href="https://twitter.com/IoTalkApp" target="_blank">
+      <a href="https://twitter.com/DefendryART" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" />
       </a>
-      <a href="https://www.linkedin.com/company/iotalk" target="_blank">
+      <a href="https://www.linkedin.com/company/defendry/" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.svg" />
       </a>
-      <a href="https://www.youtube.com/channel/UCV8_TK0fXQMQ3yTR8Vu2wVw" target="_blank">
+      <a href="https://www.youtube.com/channel/UCBLG_w4PHmPfFiJTUdteo_Q?" target="_blank">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube.svg" />
       </a>
 
@@ -57,7 +58,7 @@
       <!--End mc_embed_signup-->
 
     </div>
-    <div class="col-3 md-col-6 sm-col-12 stretch footer__contact">
+    <div class="col-3 md-col-6 sm-col-12 sm-text-center stretch footer__contact">
       <h6>Get in Touch</h6>
       <div class="row" style="display:none;">
         <div class="col-2 sm-col-2 columns stretch">
@@ -67,19 +68,19 @@
           <a href="tel:1-800-543-3456">1-800-543-3456</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2 sm-col-2 columns stretch">
+      <div class="row sm-middle-align">
+        <div class="col-2 sm-col-4 columns stretch">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" />
         </div>
-        <div class="col-10 sm-col-10 col-no-pad columns stretch">
-          <a href="mailto:info@defendry.com">info@defendry.com</a>
+        <div class="col-10 sm-col-8 sm-text-left col-no-pad columns stretch">
+          <a href="mailto:sales@defendry.com">sales@defendry.com</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2 sm-col-2 columns stretch">
+      <div class="row sm-middle-align">
+        <div class="col-2 sm-col-4 columns stretch">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/address.svg" />
         </div>
-        <div class="col-10 sm-col-10 col-no-pad columns stretch">
+        <div class="col-10 sm-col-8 sm-text-left col-no-pad columns stretch">
           <a href="https://www.google.com/maps/place/14300+N+Northsight+Blvd+%23105,+Scottsdale,+AZ+85260/data=!4m2!3m1!1s0x872b75b21e88f1ef:0x48559be651cede08?sa=X&ved=2ahUKEwix6KHT8OXdAhVrIjQIHT7lDVcQ8gEwAHoECAAQAQ" target="_blank">14300 N Northsight Blvd #105<br>Scottsdale, AZ 85260</a>
         </div>
       </div>
@@ -91,8 +92,9 @@
       <p class="text-center">
         Next Generation Surveillance <span>with ART<sup>TM</sup></span>
       </p>
-      <a class="text-center" href="https://iotalk.com/" target="_blank">
-        <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/iotalk-logo.svg" />
+
+      <a class="text-center" href="https://www.avnet.com" target="_blank" style="display:none;">
+        <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/avnet-partnership.svg" />
       </a>
     </div>
   </div>
