@@ -27,7 +27,7 @@
         <img class="hero__art" src="<?php echo $art_img[0]; ?>" alt="ART" data-aos="fade-right" data-aos-delay="200" />
       <?php endif; ?>
 
-      <div class="col-6 md-col-10 sm-col-11 col-right sm-text-center hero__row__content">
+      <div class="col-5 sm-col-11 col-right sm-col-centered sm-text-center hero__row__content">
         <div class="hero__logo sm-text-center" data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-tagline-white.svg" alt="Defendry" />
         </div>
