@@ -28,6 +28,21 @@
     right: 20px;
     opacity: .7;
   }
+
+  &__art {
+    max-width: 40%;
+    position: absolute;
+    top: -70px;
+    right: 53%;
+    z-index: 1;
+  }
+
+  &__art-screen {
+    position: absolute;
+    max-width: 250px;
+    right: 47%;
+    top: 30px;
+  }
 }
 @media screen and (max-width: $medium-breakpoint) {
   .hero {
