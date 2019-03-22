@@ -10,6 +10,11 @@
     color: $gray;
   }
 
+  p b {
+    font-style: italic;
+    color: $darkPurple;
+  }
+
   &__img {
     width: 80%;
     margin: 0 auto;
