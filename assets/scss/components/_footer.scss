@@ -49,7 +49,7 @@
         color: $white;
         font-weight: 700;
         background-color: $primary;
-        border: 1px solid $primary;
+        border: none !important;
 
         &:hover {
           color: $white;
