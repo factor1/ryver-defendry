@@ -43,6 +43,8 @@
 
 <body <?php body_class(); ?>>
 
+  <?php // Header ?>
+  <?php get_template_part('parts/global/header'); ?>
 
   <?php // Main Content ?>
   <main>

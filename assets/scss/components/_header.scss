@@ -1,18 +1,27 @@
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
-header {
-  padding-top: rem(15);
+.header {
+  height: 88px;
+  position: fixed;
+  padding: rem(10) 0;
+  background-color: $white;
   z-index: 99999;
+  transition: all 0.3s ease;
 
-  h3 {
-    text-transform: uppercase;
-    font: $light rem(30)/rem(30) $overpass;
+  &__logo {
+    max-width: 250px;
+  }
 
-    a:hover {
-      color: $white;
-      content: "Home";
+  .button--primary {
+    &:hover {
+      top: 0 !important;
+      box-shadow: none !important;
     }
+  }
+
+  &--fixed {
+    background-color: rgba(255,255,255,0.9);
   }
 }
 
