@@ -39,9 +39,9 @@
 
   &__art-screen {
     position: absolute;
-    max-width: 250px;
-    right: 47%;
-    top: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
   }
 }
 @media screen and (max-width: $medium-breakpoint) {
