@@ -35,7 +35,10 @@
   <div class="nifty-panel">
     <div class="container">
       <div class="row">
-        <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'mobile-nav')); ?>
+        <?php // Mobile Menu
+          wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'mobile-nav'));
+        ?>
+        <a class="button button--primary" href="#tell-me-more">Tell Me More</a>
       </div>
     </div>
   </div>
