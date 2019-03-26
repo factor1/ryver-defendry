@@ -117,7 +117,7 @@ sup {
   }
 
   &__header {
-    overflow-x: hidden; 
+    overflow-x: hidden;
     position: relative;
     border-radius: rem(5) rem(5) 0 0;
     box-shadow: 0 0 15px 4px rgba(0,0,0, 0.4);
@@ -338,7 +338,7 @@ sup {
 .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: $darkPurple;
+    background-color: $navyPurpleLight;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -369,7 +369,7 @@ sup {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: $darkPurple transparent transparent transparent;
+    border-color: $navyPurpleLight transparent transparent transparent;
 }
 
 .tooltip .tooltiptext {
