@@ -44,11 +44,11 @@
 
 <div class="remodal" data-remodal-id="learn-more">
   <div class="remodal__wrap">
-    <div class="remodal__header">
-      <div data-remodal-action="close" class="remodal-close">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
-        <div class="close-bg"></div>
-      </div>
+    <div data-remodal-action="close" class="remodal-close">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
+      <div class="close-bg"></div>
+    </div>
+    <div class="remodal__header">    
       <?php if($lm_title) : ?>
         <h2>
           <?php echo $lm_title; ?>
