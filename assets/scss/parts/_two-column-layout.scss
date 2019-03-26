@@ -6,13 +6,18 @@
   padding: rem(50) 0;
 
   h1 {
-    margin-bottom: rem(10);
+    margin-bottom: rem(30);
     color: $gray;
+  }
+
+  p b {
+    font-style: italic;
+    color: $darkPurple;
   }
 
   &__img {
     width: 80%;
-    margin: 0 auto;
+    margin: rem(32) auto;
     padding-bottom: 80%;
   }
 }

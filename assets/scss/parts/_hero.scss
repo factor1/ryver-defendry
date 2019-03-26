@@ -5,19 +5,23 @@
   position: relative;
   padding: rem(70) 0;
 
-  &__row {
-    &__content {
-      padding-left: rem(70);
-    }
-  }
+  // Padding for when hero text was left aligned
+  // &__row {
+  //   &__content {
+  //     padding-left: rem(70);
+  //   }
+  // }
 
   &__logo {
     max-width: rem(240);
+
+    img {
+      margin: auto;
+    }
   }
 
   &__headline {
     margin: rem(30) 0;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
   }
 
   .ryver-power {
@@ -28,23 +32,75 @@
     right: 20px;
     opacity: .7;
   }
+
+  &__art {
+    max-width: 600px;
+    position: absolute;
+    // top: -70px;
+    right: 53%;
+    z-index: 1;
+  }
+
+  &__art-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
 }
+
+@media screen and (min-width: 1300px) {
+  .hero__art {
+    top: -50px;
+  }
+}
+
 @media screen and (max-width: $medium-breakpoint) {
   .hero {
-    background-position: right center !important;
-    padding: 0;
+    // background-position: right center !important;
 
-    &__row {
-      padding: rem(70) 0 rem(100);
-      background: rgba(43,45,82,0.7);
+    // When text is on the left
+    // &__row {
+    //   padding: rem(70) 0 rem(100);
+    //   background: rgba(43,45,82,0.7);
+    // }
+
+    &__headline {
+      font-size: rem(45);
+      line-height: rem(50)
+    }
+
+    &__art {
+      top: -60px;
+      right: 48%;
+      z-index: -1;
+    }
+    &__art-screen {
+      padding: rem(70) 0;
+      z-index: -2;
     }
   }
 }
 
 @media screen and (max-width: $small-breakpoint) {
   .hero {
+    background-position-x: 0% !important;
+    padding: 0;
+
+    &__art-screen {
+      background-position-x: 0% !important;
+      padding: 0;
+    }
+
+    &__art {
+      top: 0;
+      right: 20%;
+    }
 
     &__row {
+      padding: rem(70) 0 rem(100);
+      background: rgba(43,45,82,0.7);
+
       &__content {
         padding-left: 0.8rem;
       }

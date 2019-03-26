@@ -3,6 +3,13 @@
 ----------------------------------------------------------------------------*/
 .home {
 
+  .hero {
+
+    &__headline {
+      text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    }
+  }
+
   .fifty-fifty {
 
     // Custom red check bullet point styles
@@ -17,7 +24,7 @@
         list-style: none;
         margin-left: 0px;
         padding-left: 30px;
-        background: url('../img/checkmark.svg') no-repeat;
+        background: url('../img/checkmark--purple.svg') no-repeat;
         background-position-y: 4px;
         background-size: 20px 20px;
         display: block;

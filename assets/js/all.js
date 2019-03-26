@@ -5031,24 +5031,18 @@ $('.remodal-wrapper').click(function() {
 // $(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
 // });
 
-	// Slick Slider
-  // iPhone
-  $('.iphone-slider').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-		fade: true,
-    dots: true,
-		arrows: false,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          arrows: false,
-        },
-      },
-    ],
-  });
+// Fix Nav Bar
+$(window).scroll(function () {
+		//if you hard code, then use console
+		//.log to determine when you want the
+		//nav bar to stick.
+		console.log($(window).scrollTop())
+	if ($(window).scrollTop() > 50) {
+		$('.header').addClass('header--fixed');
+	}
+	if ($(window).scrollTop() < 51) {
+		$('.header').removeClass('header--fixed');
+	}
+});
 
 });

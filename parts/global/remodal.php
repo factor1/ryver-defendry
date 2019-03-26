@@ -10,11 +10,11 @@
 
 <div class="remodal" data-remodal-id="tell-me-more">
   <div class="remodal__wrap">
+    <div data-remodal-action="close" class="remodal-close">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
+      <div class="close-bg"></div>
+    </div>
     <div class="remodal__header">
-      <div data-remodal-action="close" class="remodal-close">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
-        <div class="close-bg"></div>
-      </div>
       <?php if($tmm_title) : ?>
         <h2>
           <?php echo $tmm_title; ?>

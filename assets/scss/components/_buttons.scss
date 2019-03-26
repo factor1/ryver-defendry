@@ -18,7 +18,7 @@
   &--primary {
     color: $white;
     background: $primary;
-    background: linear-gradient($primary, $darkPrimary);
+    background: linear-gradient($lightPurple, $darkPurple);
 
     &:hover {
       top: rem(-8);
