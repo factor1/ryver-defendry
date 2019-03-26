@@ -3,6 +3,13 @@
 ----------------------------------------------------------------------------*/
 .home {
 
+  .hero {
+
+    &__headline {
+      text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    }
+  }
+
   .fifty-fifty {
 
     // Custom red check bullet point styles
