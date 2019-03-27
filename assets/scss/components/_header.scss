@@ -135,4 +135,10 @@
   main {
     top: 0;
   }
+
+  .hero {
+    &__logo {
+      display: block !important;
+    }
+  }
 }
