@@ -39,6 +39,11 @@
       border-right: none !important;
     }
 
+    a {
+      text-decoration: underline;
+      color: $white;
+    }
+
     h2 {
       color: $white;
     }
