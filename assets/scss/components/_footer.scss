@@ -11,6 +11,10 @@
     border-right: 1px solid $offwhite;
   }
 
+  p {
+    line-height: rem(22);
+  }
+
   &__logo {
     display: flex;
     flex-direction: column;
