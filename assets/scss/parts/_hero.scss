@@ -49,9 +49,33 @@
   }
 }
 
+// Hide Header on Landing Pages
+.page-id-258 {
+
+  .hero {
+    &__logo {
+      display: block !important;
+    }
+    &__art {
+      top: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 1300px) {
   .hero__art {
     top: -50px;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  // Hide Header on Landing Pages
+  .page-id-258 {
+    .hero {
+      &__art {
+        top: 50px;
+      }
+    }
   }
 }
 

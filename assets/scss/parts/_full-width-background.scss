@@ -24,6 +24,10 @@
     a {
       text-decoration: underline;
       color: $white;
+
+      &:hover {
+        color: $primary;
+      }
     }
   }
 
