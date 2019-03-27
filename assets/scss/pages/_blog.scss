@@ -1,0 +1,36 @@
+/*
+ * Blog Section
+ */
+
+.blog {
+
+  &__header {
+    padding: rem(40) 0;
+  }
+
+  &__single-row {
+    margin-bottom: rem(40);
+  }
+
+  h1, h2 {
+    color: $dark !important;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  h5 {
+    font-size: rem(16);
+    margin-bottom: rem(16);
+  }
+
+  &--single {
+
+    &__featured-image {
+      display: block;
+      max-width: rem(500);
+      margin: 0 auto rem(32);
+    }
+  }
+}

@@ -2,9 +2,7 @@
   /**
    * The default blog / index template.
    */
-  get_header();
-
-  // get_template_part('parts/global/flexible-content'); ?>
+  get_header(); ?>
 
 
 
@@ -23,7 +21,7 @@
 
           <?php while ( have_posts() ) : the_post(); ?>
 
-          <div class="row blog__single-row">
+          <div class="row row--align-items-center blog__single-row">
 
             <?php
               // variables
@@ -31,34 +29,25 @@
 
               if ( empty($thumbnail) ) :
             ?>
-              <div class="sm-col-11 col-4 col-centered columns">
-                <a class="no-underline" href="<?php echo get_permalink(); ?>">
+              <div class="sm-col-9 col-3 col-centered">
+                <a href="<?php echo get_permalink(); ?>">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/defendry-tagline-dark.svg" alt="Defendry Logo" />
                 </a>
               </div>
             <?php else : ?>
-              <div class="sm-col-11 col-4 col-centered columns">
+              <div class="sm-col-9 col-3 col-centered">
                 <a class="no-underline" href="<?php echo get_permalink(); ?>">
-                  <img src="<?php the_post_thumbnail_url( 'testimonial' ); ?>" />
+                  <img src="<?php the_post_thumbnail_url( 'full' ); ?>" />
                 </a>
               </div>
             <?php endif; ?>
 
-            <div class="sm-col-11 col-8 col-centered columns" data-aos="fade-left" data-aos-duration="800">
-              <a class="no-underline" href="<?php echo get_permalink(); ?>">
-                <h5>
+            <div class="sm-col-12 col-8 offset-1 col-centered">
+              <a href="<?php echo get_permalink(); ?>">
+                <h2>
                   <?php the_title(); ?>
-                </h5>
+                </h2>
               </a>
-              <br />
-              <ul class="list-items categories">
-                <?php
-                  $categories = get_the_category();
-                  foreach ( $categories as $category ) {
-                    echo '<li><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
-                  }
-                ?>
-              </ul>
               <p>
                 <?php echo get_the_excerpt(); ?>
               </p>
@@ -68,13 +57,13 @@
           </div>
 
           <?php endwhile; ?>
+
+          <?php the_posts_pagination();
+
+          else :
+            echo '<h2>Sorry, no posts have been found</h2>'; ?>
         </div>
       </div>
-
-      <?php numeric_pagination();
-
-      else :
-        echo '<h2>Sorry, no posts have been found</h2>'; ?>
 
     </section>
 
