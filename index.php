@@ -12,12 +12,12 @@
       <div class="row">
         <div class="sm-col-11 col-10 col-centered">
           <div class="blog__header text-center">
-            <h1>Latest News</h1>
+            <h1>Blog</h1>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="sm-col-11 col-12 col-centered">
+        <div class="sm-col-11 col-11 col-centered">
 
           <?php while ( have_posts() ) : the_post(); ?>
 

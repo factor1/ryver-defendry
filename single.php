@@ -14,7 +14,7 @@
     <section class="container blog blog--single">
 
       <div class="row">
-        <div class="col-12 sm-col-11 col-centered">
+        <div class="col-10 sm-col-11 col-centered">
           <img class="blog--single__featured-image" src="<?php the_post_thumbnail_url( 'full' ); ?>" />
           <h2><?php the_title(); ?></h2>
           <h5><?php the_date(); ?></h5>
