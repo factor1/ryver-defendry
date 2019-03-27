@@ -125,3 +125,14 @@
     padding-bottom: rem(15);
   }
 }
+
+// Hide Header on Landing Pages
+.page-id-258 {
+  .header {
+    display: none;
+  }
+
+  main {
+    top: 0;
+  }
+}
