@@ -29,7 +29,9 @@
 
       <div class="col-5 sm-col-11 col-right sm-col-centered sm-text-center hero__row__content">
         <div class="hero__logo sm-only sm-text-center" data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-tagline-white.svg" alt="Defendry" />
+          <a href="<?php echo home_url(); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-tagline-white.svg" alt="Defendry" />
+          </a>
         </div>
         <h1 class="hero__headline" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="600">
           <?php echo $header; ?>
