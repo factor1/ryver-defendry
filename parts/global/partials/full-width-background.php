@@ -44,6 +44,7 @@ $btn = get_sub_field('button');
               $colHeadline = get_sub_field('headline');
               $colText = get_sub_field('text');
               $colBtn = get_sub_field('button');
+              $link_target = $colBtn['target'] ? $colBtn['target'] : '_self';
               $colBtnType = get_sub_field('button_type');
               $colBtnPosition = get_sub_field('button_position'); ?>
 
@@ -51,7 +52,7 @@ $btn = get_sub_field('button');
                 <h2><?php echo $colHeadline; ?></h2>
                 <div class="full-width-background__col__content">
                   <?php echo $colText; ?>
-                <a href="<?php echo esc_url($colBtn['url']); ?>" class="button button--<?php echo $colBtnType; ?><?php if($colBtnPosition == 'top') : echo ' button--top"' ; endif; ?>" role="link" title="<?php echo $colBtn['title']; ?>">
+                  <a target="<?php echo esc_attr($link_target); ?>" rel="noreferrer" rel="noopener" href="<?php echo esc_url($colBtn['url']); ?>" class="button button--<?php echo $colBtnType; ?><?php if($colBtnPosition == 'top') : echo ' button--top"' ; endif; ?>" role="link" title="<?php echo $colBtn['title']; ?>">
                     <?php echo $colBtn['title']; ?>
                   </a>
                 </div>
