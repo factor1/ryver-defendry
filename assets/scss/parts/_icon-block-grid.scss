@@ -3,18 +3,27 @@
  */
 
 .icon-block-grid {
+  // padding: rem(50) 0;
+
   .row {
-    padding: rem(50) 0;
-    border-top: rem(1) solid $offwhite;
-    border-bottom: rem(1) solid $offwhite;
+
+    &:first-of-type {
+      padding-top: rem(32);
+      border-top: rem(1) solid $offwhite;
+    }
+    &:last-of-type {
+      padding-bottom: rem(32);
+      border-bottom: rem(1) solid $offwhite;
+    }
   }
 
-  .col-5 {
+  &__column {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: rem(50);
-    padding-bottom: rem(50);
+    padding-top: rem(32);
+    padding-bottom: rem(32);
   }
 
   .icon {
@@ -43,7 +52,7 @@
 // Media Queries
 @media screen and (max-width: $small-breakpoint) {
   .icon-block-grid {
-    .col-5 {
+    &__column {
       padding-top: rem(25);
       padding-bottom: rem(25);
     }
