@@ -20,6 +20,15 @@
   p {
     color: $white;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+
+    a {
+      text-decoration: underline;
+      color: $white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
   }
 
   .button {
@@ -28,6 +37,35 @@
 
   &--middle-position {
       padding: 20% 0 20% !important;
+  }
+
+  &__col {
+    padding-left: 24px;
+    padding-right: 24px;
+    border-right: 1px solid $offwhite;
+
+    &:last-of-type {
+      border-right: none !important;
+    }
+
+    h2 {
+      color: $white;
+    }
+
+    .button {
+      min-width: rem(200);
+      margin: 10px auto !important;
+
+      &--top {
+        margin: rem(5) auto rem(20) !important;
+        order: -1;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -45,6 +83,18 @@
   .full-width-background {
     margin-top: rem(40);
     padding: 30% 0 10%;
+
+    &__col {
+      max-width: 500px;
+      margin: auto;
+      padding: rem(32);
+      border-right: none !important;
+      border-bottom: 1px solid $offwhite;
+
+      &:last-of-type {
+        border-bottom: none !important;
+      }
+    }
 
     h4 {
       font-size: rem(30);

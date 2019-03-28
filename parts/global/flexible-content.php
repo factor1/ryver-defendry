@@ -53,34 +53,35 @@ if( have_rows('flexible_content') ): ?>
 
   <?php
 
-  elseif( have_rows('flexible_content_home') ): ?>
+elseif( have_rows('flexible_content_home') ): ?>
 
-    <div class="flexible-content">
+  <div class="flexible-content">
 
-      <?php
+    <?php
 
-       // loop through all the rows of flexible content
-       while ( have_rows('flexible_content') ) : the_row();
+     // loop through all the rows of flexible content
+     while ( have_rows('flexible_content') ) : the_row();
 
 
-         // 50/50
-         if( get_row_layout() == 'fifty_fifty' ) :
-           get_template_part('parts/global/partials/fifty-fifty');
+       // 50/50
+       if( get_row_layout() == 'fifty_fifty' ) :
+         get_template_part('parts/global/partials/fifty-fifty');
 
-         // 3 Column
-         elseif( get_row_layout() == 'three_column' ) :
-           get_template_part('parts/global/partials/three-col');
+       // 3 Column
+       elseif( get_row_layout() == 'three_column' ) :
+         get_template_part('parts/global/partials/three-col');
 
-         // CTA
-         elseif( get_row_layout() == 'cta' ) :
-           get_template_part('parts/global/partials/cta');
+       // CTA
+       elseif( get_row_layout() == 'cta' ) :
+         get_template_part('parts/global/partials/cta');
 
-         endif;
+       endif;
 
-       endwhile; // close the loop of flexible content
+     endwhile; // close the loop of flexible content
 
-      ?>
+    ?>
 
-    </div>
+  </div>
+
 
 <?php endif;
