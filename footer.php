@@ -87,7 +87,7 @@
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__logo">
       <a href="/" class="text-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo-dark.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo.svg" />
       </a>
       <p class="text-center">
         Next Generation Surveillance <span>with ART<sup>TM</sup></span>

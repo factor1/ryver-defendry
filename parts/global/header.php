@@ -15,7 +15,7 @@
   <div class="row row--full-width row--align-items-center row--justify-content-center">
     <div class="col-4 sm-col-10">
       <a href="<?php echo home_url(); ?>">
-        <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/defendry-logo-dark.svg" alt="Defendry" />
+        <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo.svg" alt="Defendry" />
       </a>
     </div>
     <div class="col-8 sm-col-8 sm-hide text-right">
