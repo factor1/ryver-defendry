@@ -396,6 +396,19 @@ sup {
   }
 }
 
+// Cookie bar
+#cookie-notice {
+  background-color: $offwhite !important;
+  color: $gray !important;
+
+  .cn-button.bootstrap {
+    border: none !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(#655fef),to(#433dc2));
+    background: -o-linear-gradient(#655fef,#433dc2);
+    background: linear-gradient(#655fef,#433dc2);
+  }
+}
+
 @media screen and (max-width: $small-breakpoint) {
   .remodal {
     width: 90vw;
