@@ -25,12 +25,17 @@
     color: $darkPurple;
   }
 
+  &__row {
+    padding: rem(100) rem(20);
+  }
+
   .col-8 div {
     position: relative;
-    padding-bottom: rem(20);
+    //padding-bottom: rem(20);
 
     &.dot {
-      padding: rem(100) rem(20);
+      // Removed dot specific padding because all rows need this padding
+      //padding: rem(100) rem(20);
       border-bottom: .0625rem solid #f0f0fa;
 
       &:after {
