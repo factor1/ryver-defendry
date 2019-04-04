@@ -2,7 +2,15 @@
 
 	.hero {padding-bottom:15rem;
 
-		.hero__row h1.hero__headline {color: $gray !important}
+		.hero__row h1.hero__headline {
+			&--grey {
+				color: $gray !important;
+			}
+
+			&--white {
+				color: $white !important;
+			}
+		}
 
 	// END .hero
 	}
