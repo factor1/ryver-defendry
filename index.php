@@ -29,20 +29,20 @@
 
               if ( empty($thumbnail) ) :
             ?>
-              <div class="sm-col-9 col-3 col-centered">
+              <div class="sm-col-12 md-col-10 col-3 col-centered">
                 <a href="<?php echo get_permalink(); ?>">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/defendry-tagline-dark.svg" alt="Defendry Logo" />
                 </a>
               </div>
             <?php else : ?>
-              <div class="sm-col-9 col-3 col-centered">
+              <div class="sm-col-12 md-col-10 col-3 col-centered">
                 <a class="no-underline" href="<?php echo get_permalink(); ?>">
                   <img src="<?php the_post_thumbnail_url( 'full' ); ?>" />
                 </a>
               </div>
             <?php endif; ?>
 
-            <div class="sm-col-12 col-8 offset-1 col-centered">
+            <div class="sm-col-12 md-col-10 col-8 offset-1 col-centered">
               <a href="<?php echo get_permalink(); ?>">
                 <h2>
                   <?php the_title(); ?>

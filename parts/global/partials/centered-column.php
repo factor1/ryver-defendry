@@ -31,9 +31,9 @@ if( have_rows('content_blocks') ) : ?>
           $content = get_sub_field('content');
           $divider = get_sub_field('divider_toggle');
 
-          $dotClass = $divider ? ' class="dot"' : ''; ?>
+          $dotClass = $divider ? ' dot' : ''; ?>
 
-          <div<?php echo $dotClass; ?> data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+          <div class="centered-column__row <?php echo $dotClass; ?>" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
             <?php if( $img ) : ?>
               <img class="<?php if($imgSize == 'full') : echo 'full-image'; endif ?>" src="<?php echo $img[0]; ?>" alt="Column image">
             <?php endif; ?>
