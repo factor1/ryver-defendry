@@ -18,7 +18,7 @@
         <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo.svg" alt="Defendry" />
       </a>
     </div>
-    <div class="col-8 sm-col-8 lg-only text-right">
+    <div class="col-8 sm-col-8 lg-only text-right header__navigation-wrap">
       <?php // Primary Menu
         wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>

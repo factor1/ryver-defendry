@@ -24,6 +24,14 @@
     }
   }
 
+  &__navigation-wrap {
+    justify-content: flex-end;
+
+    .button {
+      margin: 0;
+    }
+  }
+
   &--fixed {
     background-color: rgba(255,255,255,0.9);
   }
@@ -37,11 +45,13 @@
     top: 3px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
 
     li {
+      height: rem(33);
       padding-right: rem(32);
       margin: 0;
 
@@ -131,9 +141,11 @@
           color: $white;
         }
 
-        .current-menu-item {
-          color: $primary;
-          text-decoration: underline;
+        &.current-menu-item {
+          a {
+            color: $primary;
+            text-decoration: underline;
+          }
         }
       }
     }
