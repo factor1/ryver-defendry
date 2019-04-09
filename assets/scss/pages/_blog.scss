@@ -36,3 +36,14 @@
     }
   }
 }
+
+// Media Queries
+@media screen and (max-width: $medium-breakpoint) {
+  .blog {
+    &__single-row {
+      img {
+        margin-bottom: rem(32);
+      }
+    }
+  }
+}
