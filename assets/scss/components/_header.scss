@@ -121,11 +121,20 @@
       list-style: none;
       margin-top: rem(20);
       padding-right: rem(30);
-      text-align: right;
+      text-align: left;
 
       li {
         font-size: rem(30);
-        padding: rem(15) 0;
+        //padding: rem(15) 0;
+
+        a {
+          color: $white;
+        }
+
+        .current-menu-item {
+          color: $primary;
+          text-decoration: underline;
+        }
       }
     }
   }

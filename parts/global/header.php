@@ -13,7 +13,7 @@
 
 <header class="container header">
   <div class="row row--full-width row--align-items-center row--justify-content-center">
-    <div class="col-4 sm-col-10">
+    <div class="col-4 md-col-4 sm-col-10">
       <a href="<?php echo home_url(); ?>">
         <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo.svg" alt="Defendry" />
       </a>
@@ -26,7 +26,7 @@
     </div>
 
   <?php // Small Navigation ?>
-    <div class="sm-col-2 nifty-nav-wrap">
+    <div class="sm-col-2 md-col-8 nifty-nav-wrap">
       <a href="#" id="nifty-nav-toggle"><span></span></a>
     </div>
   </div>
