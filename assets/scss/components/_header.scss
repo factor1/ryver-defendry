@@ -33,6 +33,8 @@
   display: inline-flex;
 
   ul {
+    position: relative;
+    top: 3px;
     display: flex;
     justify-content: flex-end;
     padding: 0;
@@ -47,6 +49,7 @@
         margin: 0;
         font: $light rem(20)/rem(25) $overpass;
         color: $dark;
+        transition: all 0.2s ease;
 
         &:after {
           content: '';
@@ -129,9 +132,32 @@
 }
 
 // Media Queries
+@media screen and (max-width:$medium-breakpoint) {
+  header {
+    .primary-nav {
+      ul {
+        li {
+          a {
+            font-size: rem(16);
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width:$small-breakpoint) {
   header {
     padding-bottom: rem(15);
+
+    .primary-nav {
+      ul {
+        li {
+          a {
+            font-size: rem(16);
+          }
+        }
+      }
+    }
   }
 }
 
