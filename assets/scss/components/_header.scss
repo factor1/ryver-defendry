@@ -130,10 +130,19 @@
     }
   }
 }
+.nifty-nav-wrap {
+  display: none;
+}
 
 // Media Queries
 @media screen and (max-width:$medium-breakpoint) {
   header {
+    .nifty-nav-wrap {
+      display: -webkit-box!important;
+      display: -webkit-flex!important;
+      display: -ms-flexbox!important;
+      display: flex!important;
+    }
     .primary-nav {
       ul {
         li {
