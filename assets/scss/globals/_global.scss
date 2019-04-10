@@ -253,9 +253,16 @@ sup {
       .gfield_checkbox {
         input[type=checkbox] {
           margin-top: 0 !important;
+          margin-right: rem(5) !important;
+
+          &#choice_1_7_1, &#choice_2_13_1 {
+            position: relative;
+            top: -11px;
+          }
         }
         label {
           font-size: rem(18);
+          line-height: rem(20);
         }
       }
     }
