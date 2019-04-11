@@ -26,14 +26,16 @@ if( have_rows('content_blocks') ) : ?>
       <div class="col-8 sm-col-11 col-centered text-center">
 
         <?php while( have_rows('content_blocks') ) : the_row();
+          $dividerAbove = get_sub_field('divider_toggle_above');
           $imgSize = get_sub_field('image_size');
           $img = wp_get_attachment_image_src(get_sub_field('image'), $imgSize);
           $content = get_sub_field('content');
           $divider = get_sub_field('divider_toggle');
 
+          $dotClassAbove = $dividerAbove ? ' dot--above' : '';
           $dotClass = $divider ? ' dot' : ''; ?>
 
-          <div class="centered-column__row <?php echo $dotClass; ?>" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+          <div class="centered-column__row <?php echo $dotClass; echo $dotClassAbove; ?>" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
             <?php if( $img ) : ?>
               <img class="<?php if($imgSize == 'full') : echo 'full-image'; endif ?>" src="<?php echo $img[0]; ?>" alt="Column image">
             <?php endif; ?>
