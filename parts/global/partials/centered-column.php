@@ -6,7 +6,7 @@
 // Custom Fields
 $bgToggle = get_sub_field('background_toggle');
 $bgFlip = get_sub_field('flip_background_image');
-$headline = get_sub_field('headline');
+$headlineCenteredCol = get_sub_field('headline');
 $headlineSize = get_sub_field('headline_size');
 $btnToggle = get_sub_field('button_toggle');
 $btn = get_sub_field('button');
@@ -19,9 +19,11 @@ if( have_rows('content_blocks') ) : ?>
 
   <section class="container centered-column<?php echo $bgClass; ?><?php echo $bgFlipClass; ?>">
     <div class="row">
-      <div class="col-12 sm-col-11 text-center" data-aos="fade-up" data-aos-duration="800">
-        <h1 class="centered-column__headline--<?php echo $headlineSize; ?>"><?php echo $headline; ?></h1>
-      </div>
+      <?php if($headlineCenteredCol) : ?>
+        <div class="col-12 sm-col-11 text-center" data-aos="fade-up" data-aos-duration="800">
+          <h1 class="centered-column__headline--<?php echo $headlineSize; ?>"><?php echo $headlineCenteredCol; ?></h1>
+        </div>
+      <?php endif; ?>
 
       <div class="col-8 sm-col-11 col-centered text-center">
 
