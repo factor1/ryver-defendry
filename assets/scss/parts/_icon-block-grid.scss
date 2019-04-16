@@ -9,11 +9,11 @@
 
     &:first-of-type {
       padding-top: rem(32);
-      border-top: rem(1) solid $offwhite;
+      border-top: rem(2) solid $offwhite;
     }
     &:last-of-type {
       padding-bottom: rem(32);
-      border-bottom: rem(1) solid $offwhite;
+      border-bottom: rem(2) solid $offwhite;
     }
   }
 

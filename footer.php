@@ -40,7 +40,7 @@
       	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
       </style>
       <div id="mc_embed_signup">
-      <form action="https://ryver.us5.list-manage.com/subscribe/post?u=bbfac7d1353c0b75fa67a2cab&amp;id=9be6003dd5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <form action="https://ryver.us5.list-manage.com/subscribe/post?u=bbfac7d1353c0b75fa67a2cab&amp;id=514c8dc33f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
           <div class="mc-field-group">
         	   <input type="email" value="" name="EMAIL" placeholder="Your Email..." class="required email" id="mce-EMAIL">
