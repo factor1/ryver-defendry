@@ -42,8 +42,8 @@
         &:before {
           content: '';
           position: absolute;
-          top: rem(10);
-          left: 50%;
+          top: rem(12);
+          left: calc(50% - 1px);
           width: rem(2);
           height: rem(50);
           background-color: #f0f0fa;
@@ -54,9 +54,9 @@
         content: url('../img/dot-divider.svg');
         position: absolute;
         bottom: rem(-10);
-        left: calc(50% - 10px);
-        width: rem(20);
-        height: rem(70);
+        left: calc(50% - 10.5px);
+        width: rem(21);
+        height: rem(72);
         // border-radius: 50%;
         // background: $primary;
         // background: linear-gradient($primary, $darkPrimary);
