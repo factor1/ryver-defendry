@@ -280,7 +280,7 @@ sup {
           line-height: rem(20);
         }
 
-        #input_2_14_other {
+        input[value="Other"] {
           width: calc(100% - 25px);
           padding: 5px 10px !important;
           color: $copyColor;
