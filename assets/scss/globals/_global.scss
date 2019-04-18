@@ -265,6 +265,27 @@ sup {
           line-height: rem(20);
         }
       }
+      .gfield_radio {
+        input[type=radio] {
+          margin-top: 0 !important;
+          margin-right: rem(5) !important;
+
+          &#choice_2_14_5 {
+            position: relative;
+            top: -3px;
+          }
+        }
+        label {
+          font-size: rem(18);
+          line-height: rem(20);
+        }
+
+        input[value="Other"] {
+          width: calc(100% - 25px) !important;
+          padding: 5px 10px !important;
+          color: $copyColor;
+        }
+      }
     }
 
     form {
