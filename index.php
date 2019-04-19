@@ -47,6 +47,9 @@
                 <h2>
                   <?php the_title(); ?>
                 </h2>
+                <h6>
+                  <?php the_date(); ?>
+                </h6>
               </a>
               <p>
                 <?php echo get_the_excerpt(); ?>
