@@ -23,7 +23,7 @@
 
            <?php while ( have_posts() ) : the_post(); ?>
 
-           <div class="row search--single__row">
+           <div class="row search__single-row">
 
              <div class="sm-col-11 col-12 col-centered col-no-pad columns">
                <a href="<?php echo get_permalink(); ?>">

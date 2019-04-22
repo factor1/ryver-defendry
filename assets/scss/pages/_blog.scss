@@ -5,6 +5,10 @@
 .blog {
   padding-bottom: rem(40);
 
+  a:hover {
+    color: $darkPrimary;
+  }
+
   &__header {
     padding: rem(40) 0;
   }

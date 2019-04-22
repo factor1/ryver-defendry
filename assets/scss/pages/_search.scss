@@ -4,6 +4,14 @@
 
 .search {
 
+  h2 {
+    color: $dark;
+
+    &:hover {
+      color: $darkPrimary;
+    }
+  }
+
   &__single-row {
     border-bottom: 2px solid $lightGray;
     margin-bottom: 40px;
