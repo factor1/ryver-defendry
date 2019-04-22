@@ -25,15 +25,33 @@
   }
 
   &__navigation-wrap {
-    justify-content: flex-end;
-
-    .button {
-      margin: 0;
-    }
+    justify-content: flex-start;
   }
 
   &--fixed {
     background-color: rgba(255,255,255,0.9);
+  }
+
+  &__utility-wrap {
+    .defendry-search {
+      padding-right: rem(16);
+
+      .fa-search {
+        position: relative;
+        top: 15px;
+        width: rem(20);
+        height: rem(20);
+
+        &:before {
+          font-size: rem(20);
+          color: $dark;
+        }
+      }
+    }
+    
+    .button {
+      margin: 0;
+    }
   }
 }
 
