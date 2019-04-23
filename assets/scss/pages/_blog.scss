@@ -15,6 +15,12 @@
 
   &__single-row {
     margin-bottom: rem(40);
+
+    &__title {
+      &:hover {
+        color: $darkPrimary;
+      }
+    }
   }
 
   h1, h2 {

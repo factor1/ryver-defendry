@@ -27,7 +27,7 @@
 
              <div class="sm-col-11 col-12 col-centered col-no-pad columns">
                <a href="<?php echo get_permalink(); ?>">
-                 <h2>
+                 <h2 class="search__single-row__title">
                    <?php the_title(); ?>
                  </h2>
                </a>
@@ -42,14 +42,7 @@
                <p style="margin-top:15px;">
                  <?php the_excerpt(); ?>
                </p>
-               <ul class="list-items search__categories">
-                 <?php
-                   $categories = get_the_category();
-                   foreach ( $categories as $category ) {
-                     echo '<li class="small-meta-font"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
-                   }
-                 ?>
-               </ul>
+
              </div>
 
            </div>

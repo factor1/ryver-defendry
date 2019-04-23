@@ -4,17 +4,17 @@
 
 .search {
 
-  h2 {
-    color: $dark;
-
-    &:hover {
-      color: $darkPrimary;
-    }
-  }
-
   &__single-row {
     border-bottom: 2px solid $lightGray;
     margin-bottom: 40px;
+
+    &__title {
+      color: $dark;
+
+      &:hover {
+        color: $darkPrimary;
+      }
+    }
   }
 
   .search-form {
