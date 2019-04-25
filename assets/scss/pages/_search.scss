@@ -16,6 +16,10 @@
         color: $darkPrimary;
       }
     }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
 
   .search-form {
