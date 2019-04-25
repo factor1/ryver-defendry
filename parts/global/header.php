@@ -47,7 +47,7 @@
     		</button>
     	</form>
       <a class="header__search-bar--close defendry-search-toggle">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline--purple.svg">
       </a>
     </div>
   </div>

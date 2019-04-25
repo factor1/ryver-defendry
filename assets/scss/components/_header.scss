@@ -56,10 +56,11 @@
     &--close {
       position: relative;
       left: -40px;
+      top: 5px;
 
       img {
-        width: rem(30);
-        height: rem(30);
+        width: rem(20);
+        height: rem(20);
         transform: rotate(45deg);
       }
     }
