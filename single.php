@@ -17,7 +17,7 @@
         <div class="col-10 sm-col-11 col-centered">
           <img class="blog--single__featured-image" src="<?php the_post_thumbnail_url( 'full' ); ?>" />
           <h2><?php the_title(); ?></h2>
-          <h5><?php the_date(); ?></h5>
+          <h6><?php the_date(); ?></h6>
           <?php the_content(); ?>
         </div>
       </div>

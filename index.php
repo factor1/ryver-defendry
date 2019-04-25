@@ -44,9 +44,12 @@
 
             <div class="sm-col-12 md-col-10 col-8 offset-1 col-centered">
               <a href="<?php echo get_permalink(); ?>">
-                <h2>
+                <h2 class="blog__single-row__title">
                   <?php the_title(); ?>
                 </h2>
+                <h6>
+                  <?php the_date(); ?>
+                </h6>
               </a>
               <p>
                 <?php echo get_the_excerpt(); ?>

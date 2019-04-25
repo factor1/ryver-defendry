@@ -5,12 +5,22 @@
 .blog {
   padding-bottom: rem(40);
 
+  a:hover {
+    color: $darkPrimary;
+  }
+
   &__header {
     padding: rem(40) 0;
   }
 
   &__single-row {
     margin-bottom: rem(40);
+
+    &__title {
+      &:hover {
+        color: $darkPrimary;
+      }
+    }
   }
 
   h1, h2 {
