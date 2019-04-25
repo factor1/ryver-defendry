@@ -5042,7 +5042,7 @@ $(window).scroll(function () {
 
 // Search Bar in Header
 $('.defendry-search-toggle').click(function() {
-	$('#modal-search').slideToggle();
+	$('#modal-search').slideToggle('fast');
 });
 
 });
