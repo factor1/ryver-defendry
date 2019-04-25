@@ -29,7 +29,12 @@
     position: fixed;
     top: 88px;
     padding: rem(10) 0;
-    background-color: $offwhite;
+    background: $darkPurple;
+    background: linear-gradient($lightPurple, $darkPurple);
+
+    > .row {
+      margin: auto;
+    }
 
     .search-form {
       width: calc(100% - 40px) !important;
