@@ -36,9 +36,6 @@
                    <?php echo get_permalink(); ?>
                  </a>
                </p>
-               <h6>
-                 <?php the_date(); ?>
-               </h6>
                <p style="margin-top:15px;">
                  <?php the_excerpt(); ?>
                </p>
