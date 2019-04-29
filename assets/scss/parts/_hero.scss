@@ -66,6 +66,10 @@
   .hero__art {
     top: -50px;
   }
+
+  .home .hero {
+    min-height: rem(500);
+  }
 }
 
 @media screen and (max-width: 1299px) {
