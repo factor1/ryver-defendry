@@ -33,7 +33,7 @@ $btn = get_sub_field('button');
     <?php elseif($numColumns == 3) : ?>
       <div class="sm-col-11 col-11 col-centered text-center" data-aos="fade-up" data-aos-duration="800">
         <h4><?php echo $headline; ?></h4>
-        <div class="sm-block-grid-1 block-grid-3">
+        <div class="sm-block-grid-1 block-grid-3 full-width-background__3-col">
 
           <?php if( have_rows('columns') ):
 
