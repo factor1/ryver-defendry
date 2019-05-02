@@ -53,9 +53,17 @@
       }
     }
 
+    .search-submit {
+      background: no-repeat;
+      border: none;
+      position: absolute;
+      top: 4px;
+      right: 0;
+    }
+
     &--close {
       position: relative;
-      left: -40px;
+      left: 0px;
       top: 5px;
 
       img {
