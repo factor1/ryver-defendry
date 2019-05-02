@@ -26,18 +26,18 @@
            <div class="row search__single-row">
 
              <div class="sm-col-11 col-12 col-centered col-no-pad columns">
-               <a href="<?php echo get_permalink(); ?>">
+               <a href="<?php echo relevanssi_get_permalink(); ?>">
                  <h2 class="search__single-row__title">
-                   <?php the_title(); ?>
+                   <?php relevanssi_the_title(); ?>
                  </h2>
                </a>
                <p class="small-meta-font">
-                 <a class="search-url" href="<?php echo get_permalink(); ?>">
-                   <?php echo get_permalink(); ?>
+                 <a class="search-url" href="<?php echo relevanssi_get_permalink(); ?>">
+                   <?php echo relevanssi_get_permalink(); ?>
                  </a>
                </p>
                <p style="margin-top:15px;">
-                 <?php the_excerpt(); ?>
+                 <?php relevanssi_the_excerpt(); ?>
                </p>
 
              </div>
