@@ -54,13 +54,28 @@
 
 
   <div class="nifty-panel">
+    <!-- Search Bar -->
+    <div class="container container--direction-row header__search-bar" id="mobile-modal-search">
+      <div class="row">
+        <div class="col-12">
+        	<form role="search" method="get" class="search-form" action="<?php get_template_directory_uri(); ?>/">
+        		<label>
+        			<span class="screen-reader-text">Search:</span>
+        			<input type="search" id="defendry-search" class="search-field" placeholder="Search..." value="" name="s">
+        		</label>
+        		<button type="submit" class="search-submit" value="Search">
+        			<i class="fa fa-search"></i>
+        		</button>
+        	</form>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <?php // Mobile Menu
           wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'mobile-nav'));
         ?>
         <a class="button button--primary" href="#tell-me-more">Tell Me More</a>
-        <a class="defendry-search" href="#modal-search" onmouseup="setTimeout(function(){document.getElementById('rcp-search').focus()},10);"><i class="fa fa-search"></i></a>
       </div>
     </div>
   </div>

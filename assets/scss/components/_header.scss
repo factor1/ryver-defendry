@@ -193,6 +193,30 @@
     margin: rem(24) auto;
   }
 
+  #mobile-modal-search {
+    display: block;
+    position: relative;
+    top: 0;
+    padding: rem(10) rem(20);
+
+    .search-submit {
+      top: 0;
+    }
+
+    .search-form {
+      width: 100% !important;
+      padding-left: 0;
+
+      label {
+        min-width: 100%;
+      }
+
+      input {
+        padding: 10px 35px 10px 10px;
+      }
+    }
+  }
+
   .mobile-nav {
     width: 100%;
 
