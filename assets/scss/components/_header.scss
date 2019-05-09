@@ -57,13 +57,13 @@
       background: no-repeat;
       border: none;
       position: absolute;
-      top: 4px;
+      top: 0;
       right: 45px;
     }
 
     &--close {
       position: relative;
-      left: 0px;
+      right: 45px;
       top: 5px;
 
       img {
