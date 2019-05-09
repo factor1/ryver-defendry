@@ -26,6 +26,7 @@ html a {
 main {
   position: relative;
   top: 88px;
+  min-height: calc(100vh - 412px);
 }
 
 body {
