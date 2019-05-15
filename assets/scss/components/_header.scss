@@ -43,6 +43,7 @@
     .search-form {
       width: calc(100% - 40px) !important;
       max-width: none !important;
+      position: relative;
 
       label {
         width: calc(100% - 40px);
@@ -61,7 +62,7 @@
       background: no-repeat;
       border: none;
       position: absolute;
-      top: 4px;
+      top: 0;
       right: 57.8px;
     }
 
@@ -264,6 +265,20 @@
           a {
             font-size: rem(16);
           }
+        }
+      }
+    }
+    .header__search-bar {
+      .search-form {
+        width: 100% !important;
+
+        label {
+          width: 100% !important;
+        }
+
+        .search-submit {
+          right: 3px;
+          top: 7px !important;
         }
       }
     }
