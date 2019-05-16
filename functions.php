@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
   define( 'THEME_VERSION', '1.4.328' );
-=======
-  define( 'THEME_VERSION', '1.4.288' );
->>>>>>> develop
 
   /**
    * Load tweaks
