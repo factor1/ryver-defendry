@@ -10,7 +10,7 @@ $header = get_sub_field('header');
   <div class="row">
     <div class="sm-col-11 col-12 columns col-centered">
       <?php if($header) : ?>
-        <h1 class="text-center" data-aos="fade-down">
+        <h1 class="text-center" data-aos="fade-up">
           <?php echo $header; ?>
         </h1>
       <?php endif; ?>
