@@ -36,6 +36,9 @@
     &--small {
       font-size: rem(48);
     }
+    &--no-padding {
+      padding-top: 0 !important;
+    }
   }
 
   p strong {

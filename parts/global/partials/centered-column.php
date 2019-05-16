@@ -8,10 +8,12 @@ $bgToggle = get_sub_field('background_toggle');
 $bgFlip = get_sub_field('flip_background_image');
 $headlineCenteredCol = get_sub_field('headline');
 $headlineSize = get_sub_field('headline_size');
+$headlineNoPadding = get_sub_field('remove_headline_top_padding');
 $btnToggle = get_sub_field('button_toggle');
 $btn = get_sub_field('button');
 
 // Conditional classes/styles
+$headlinePadding = $headlineNoPadding ? ' centered-column__headline--no-padding' : '';
 $bgClass = $bgToggle ? ' background' : '';
 $bgFlipClass = $bgFlip ? ' background-flip' : '';
 
@@ -21,7 +23,7 @@ if( have_rows('content_blocks') ) : ?>
     <div class="row">
       <?php if($headlineCenteredCol) : ?>
         <div class="col-12 sm-col-11 text-center" data-aos="fade-up" data-aos-duration="800">
-          <h1 class="centered-column__headline--<?php echo $headlineSize; ?>"><?php echo $headlineCenteredCol; ?></h1>
+          <h1 class="centered-column__headline--<?php echo $headlineSize; echo $headlinePadding; ?>"><?php echo $headlineCenteredCol; ?></h1>
         </div>
       <?php endif; ?>
 
