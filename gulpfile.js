@@ -3,7 +3,11 @@
 ------------------------------------------------------------------------------*/
 // Theme information (name, starting theme version)
 var theme        = 'defendry', // will be autocompleted by prelude-init
+<<<<<<< HEAD
     version      = '1.4.32'; // updated with gulp version task
+=======
+    version      = '1.4.28'; // updated with gulp version task
+>>>>>>> develop
 
 // Set the paths you will be working with
 var phpFiles     = ['./**/*.php', './*.php'],

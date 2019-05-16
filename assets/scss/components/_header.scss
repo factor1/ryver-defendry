@@ -24,16 +24,96 @@
     }
   }
 
-  &__navigation-wrap {
-    justify-content: flex-end;
+  &__search-bar {
+    display: none;
+    position: fixed;
+    top: 88px;
+    padding: rem(10) 0;
+    background: $darkPurple;
+    background: linear-gradient($lightPurple, $darkPurple);
 
-    .button {
-      margin: 0;
+    > .row {
+      margin: auto;
+    }
+
+    &__column {
+      display: flex;
+    }
+
+    .search-form {
+      width: calc(100% - 40px) !important;
+      max-width: none !important;
+      position: relative;
+
+      label {
+        width: calc(100% - 40px);
+
+        .search-field {
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid grey;
+          padding: 5px 35px 5px 10px;
+          font-size: rem(16);
+        }
+      }
+    }
+
+    .search-submit {
+      background: no-repeat;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 57.8px;
+      color: $gray;
+    }
+
+    &--close {
+      position: relative;
+      right: -12.8px;
+      top: 5px;
+
+      img {
+        width: rem(20);
+        height: rem(20);
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__navigation-wrap {
+    justify-content: flex-start;
+
+    .defendry-search {
+      color: $gray !important;
     }
   }
 
   &--fixed {
     background-color: rgba(255,255,255,0.9);
+  }
+
+  &__utility-wrap {
+    justify-content: flex-end;
+
+    .defendry-search {
+      padding-right: rem(16);
+
+      .fa-search {
+        position: relative;
+        top: 15px;
+        width: rem(20);
+        height: rem(20);
+
+        &:before {
+          font-size: rem(20);
+          color: $dark;
+        }
+      }
+    }
+
+    .button {
+      margin: 0;
+    }
   }
 }
 
@@ -123,6 +203,26 @@
     margin: rem(24) auto;
   }
 
+  #mobile-modal-search {
+    display: block;
+    position: relative;
+    top: 0;
+    padding: rem(10) rem(20);
+
+    .search-submit {
+      top: 0;
+    }
+
+    .search-form {
+      width: 100% !important;
+      padding-left: 0;
+
+      input {
+        padding: 10px 35px 10px 10px;
+      }
+    }
+  }
+
   .mobile-nav {
     width: 100%;
 
@@ -170,6 +270,20 @@
           a {
             font-size: rem(16);
           }
+        }
+      }
+    }
+    .header__search-bar {
+      .search-form {
+        width: 100% !important;
+
+        label {
+          width: 100% !important;
+        }
+
+        .search-submit {
+          right: 3px;
+          top: 7px !important;
         }
       }
     }

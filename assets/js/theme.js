@@ -108,11 +108,6 @@ $('.remodal-wrapper').click(function() {
 	 $("#video01 iframe").attr("src",video01);
 });
 
-// $(".remodal-overlay, .remodal .remodal-close").click( function() {
-// 	console.log("1");
-// $(".remodal iframe").attr("src", $(".remodal iframe").attr("src"));
-// });
-
 // Fix Nav Bar
 $(window).scroll(function () {
 		//if you hard code, then use console
@@ -125,6 +120,11 @@ $(window).scroll(function () {
 	if ($(window).scrollTop() < 51) {
 		$('.header').removeClass('header--fixed');
 	}
+});
+
+// Search Bar in Header
+$('.defendry-search-toggle').click(function() {
+	$('#modal-search').slideToggle('fast');
 });
 
 });
