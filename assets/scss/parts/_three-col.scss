@@ -24,6 +24,7 @@
 
     &__img {
       width: 50%;
+      max-width: rem(240);
       margin: rem(32) auto;
       padding-bottom: 50%;
     }
