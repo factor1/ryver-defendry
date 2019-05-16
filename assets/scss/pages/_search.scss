@@ -37,6 +37,7 @@
     border: none;
     font-size: 20px;
     background: transparent;
+    color: $gray;
   }
 
   &__results-title {
@@ -44,7 +45,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: rem(40);
+    margin: rem(40) auto;
     font-size: rem(32);
     color: $navyPurpleDark;
 
@@ -68,7 +69,6 @@
   .search {
     &__results-title {
       justify-content: center;
-      margin-top: rem(32);
     }
 
     .search-form {
