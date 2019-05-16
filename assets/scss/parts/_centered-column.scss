@@ -9,6 +9,23 @@
     padding-top: rem(200);
     background: url('../img/section-bg-img-right.jpg') right top/100% auto no-repeat;
   }
+  &.background-flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
+    > .row {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+  }
 
   h1 {
     padding: rem(50) 0 rem(25);
@@ -27,6 +44,10 @@
 
   &__row {
     padding: rem(100) rem(20);
+
+    &--remove-padding {
+      padding: 0 !important;
+    }
   }
 
   .col-8 div {
@@ -72,24 +93,6 @@
     &.full-image {
       height: rem(400);
       margin-bottom: rem(40);
-    }
-  }
-
-  &.background-flip {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-
-    > .row {
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
     }
   }
 }

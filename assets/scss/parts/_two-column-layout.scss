@@ -5,6 +5,28 @@
 .two-column-layout {
   padding: rem(50) 0;
 
+  &.background {
+    padding-top: rem(200);
+    background: url('../img/section-bg-img-right.jpg') right top/100% auto no-repeat;
+  }
+  &.background-flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
+    > .row {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+  }
+
   h1 {
     margin-bottom: rem(30);
     color: $gray;
@@ -19,6 +41,12 @@
     width: 80%;
     margin: rem(32) auto;
     padding-bottom: 80%;
+  }
+
+  &__img--small {
+    width: 40%;
+    margin: rem(32) auto;
+    padding-bottom: 40%;
   }
 }
 
