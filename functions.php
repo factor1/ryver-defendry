@@ -1,6 +1,6 @@
 <?php
 
-  define( 'THEME_VERSION', '1.5.08' );
+  define( 'THEME_VERSION', '1.5.18' );
 
   /**
    * Load tweaks
