@@ -71,6 +71,9 @@
       <p class="text-center">
         Next Generation Surveillance <span>with ART<sup>TM</sup></span>
       </p>
+      <p class="text-center">
+        <img style="max-width:200px; margin:auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/ESA_Assoc_Member_Logo.png" />
+      </p>
 
       <a class="text-center" href="https://www.avnet.com" target="_blank" style="display:none;">
         <img class="ryver-power" src="<?php echo get_template_directory_uri(); ?>/assets/img/avnet-partnership.svg" />
