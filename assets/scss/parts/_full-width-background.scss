@@ -39,6 +39,14 @@
       padding: 20% 0 20% !important;
   }
 
+  &__image-under-headline {
+    margin: 16px auto 40px;
+
+    img {
+      max-width: 70%;
+    }
+  }
+
   &__col {
     padding-left: 24px;
     padding-right: 24px;
