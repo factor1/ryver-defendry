@@ -48,7 +48,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
       <div class="close-bg"></div>
     </div>
-    <div class="remodal__header">    
+    <div class="remodal__header">
       <?php if($lm_title) : ?>
         <h2>
           <?php echo $lm_title; ?>
@@ -66,7 +66,9 @@
   </div>
 </div>
 
-<?php // Video Modals
+<!--  Video Modals  -->
+
+<?php
 if( have_rows('flexible_content') ):  while ( have_rows('flexible_content') ) : the_row();
   if( get_row_layout() == 'video_modal' ) :
     $video = get_sub_field('video'); ?>
@@ -86,3 +88,20 @@ if( have_rows('flexible_content') ):  while ( have_rows('flexible_content') ) : 
 
   <?php endif;
 endwhile; endif; ?>
+
+<?php if( is_front_page() ) :
+  $hero_video = get_field('hero_video');?>
+
+  <div class="remodal-bg">
+    <div class="remodal remodal--video" data-remodal-id="hero-video-modal">
+      <div data-remodal-action="close" class="remodal-close">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/baseline-add_circle_outline.svg" />
+        <div class="close-bg"></div>
+      </div>
+
+      <div class="flex-video" id="video01">
+        <?php echo $hero_video; ?>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>

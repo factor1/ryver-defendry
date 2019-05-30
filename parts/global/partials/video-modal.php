@@ -18,9 +18,11 @@ $content = get_sub_field('content');
 
       <h1 class="video-modal__headline--<?php echo $headlineSize; ?>" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500"><?php echo $headline; ?></h1>
 
-      <a href="#video-modal">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play-btn.svg" alt="Play" data-aos="fade-down" data-aos-delay="700" data-aos-duration="700">
-      </a>
+      <?php if($video) : ?>
+        <a href="#video-modal">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play-btn.svg" alt="Play" data-aos="fade-down" data-aos-delay="700" data-aos-duration="700">
+        </a>
+      <?php endif; ?>
 
     </div>
   </div>

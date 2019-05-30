@@ -8,6 +8,10 @@ $img = wp_get_attachment_image_src(get_sub_field('background'), 'full');
 $page_position = get_sub_field('page_position');
 $headline = get_sub_field('headline');
 $numColumns = get_sub_field('number_of_columns');
+$imgUnderHeadlineID = get_sub_field('image_under_headline');
+$imgUnderHeadline = wp_get_attachment_image_src($imgUnderHeadlineID, 'home-hero-art');
+$imgUnderHeadline_alt_text = get_post_meta($imgUnderHeadlineID , '_wp_attachment_image_alt', true);
+$imgUnderHeadlineLink = get_sub_field('image_under_headline_link');
 $copy = get_sub_field('support_content');
 $btn = get_sub_field('button');
 
@@ -22,6 +26,14 @@ $btn = get_sub_field('button');
 
       <div class="sm-col-11 col-10 col-centered text-center" data-aos="fade-up" data-aos-duration="800">
         <h4><?php echo $headline; ?></h4>
+
+        <?php if($imgUnderHeadline) : ?>
+          <div class="full-width-background__image-under-headline">
+            <a href="<?php echo esc_url($imgUnderHeadlineLink['url']); ?>" role="link">
+              <img src="<?php echo $imgUnderHeadline[0]; ?>" alt="<?php echo $imgUnderHeadline_alt_text; ?>" />
+            </a>
+          </div>
+        <?php endif; ?>
 
         <?php if($copy); echo $copy;?>
 
