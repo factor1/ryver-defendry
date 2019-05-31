@@ -19,7 +19,7 @@ $btn = get_sub_field('button');
 
 
 
-<section class="container full-width-background <?php if($page_position) : echo "full-width-background--middle-position"; endif; ?>" style="background: url('<?php echo $img[0]; ?>') left top/cover no-repeat">
+<section class="container full-width-background <?php if($page_position) : echo "full-width-background--middle-position"; endif; ?><?php if($imgUnderHeadline) : echo "full-width-background--image-included"; endif;?>" style="background: url('<?php echo $img[0]; ?>') left top/cover no-repeat">
   <div class="row">
 
     <?php if($numColumns == 1) : ?>
