@@ -9,6 +9,8 @@
   $art_screen_img = wp_get_attachment_image_src($art_screen_img_id, 'full');
   $header = get_field('header');
   $link = get_field('cta_button');
+  $hero_video_link = get_field('hero_video_link');
+  $hero_video = get_field('hero_video');
 
 ?>
 
@@ -36,11 +38,19 @@
         <h1 class="hero__headline" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="600">
           <?php echo $header; ?>
         </h1>
-        <div data-aos="fade-left" data-aos-delay="1200" data-aos-duration="400">
-          <a class="button button--primary" href="<?php echo $link['url']; ?>">
+        <?php if($hero_video) : ?>
+          <div data-aos="fade-left" data-aos-delay="1200" data-aos-duration="400">
+            <a class="button button--video hero-button" href="<?php echo $hero_video_link['url']; ?>">
+              <span><i class="fa fa-play"></i></span> <?php echo $hero_video_link['title']; ?>
+            </a>
+          </div>
+        <?php endif; ?>
+        <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="400">
+          <a class="button button--primary hero-button" href="<?php echo $link['url']; ?>">
             <?php echo $link['title']; ?>
           </a>
         </div>
+
       </div>
     </div>
   </section>

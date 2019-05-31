@@ -38,14 +38,16 @@
     }
   }
 
-  &--tertiary {
+  &--video{
+    margin-bottom: rem(16);
     color: $white;
-    background-color: $secondary;
-    border: 1px solid $secondary;
+    background-color: transparent;
+    border: 1px solid $white;
+    text-transform: uppercase;
 
     &:hover {
-      color: $secondary;
-      background-color: $white;
+      color: $white;
+      background-color: rgba(255,255,255,0.3);
     }
   }
 
@@ -61,4 +63,8 @@
       box-shadow: 0 20px 40px -20px rgba(0,0,0, 0.6);
     }
   }
+}
+
+.hero-button {
+  min-width: rem(210);
 }

@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="text-center">
-        <?php $link = is_page_template('templates/page-partner.php') ? '#learn-more' : esc_url(home_url()) . '/partner-program'; ?>
+        <?php $link = esc_url(home_url()) . '/partner-program'; ?>
         <a class="button button--primary" href="<?php echo $link; ?>">Learn More</a>
       </div>
     </div>

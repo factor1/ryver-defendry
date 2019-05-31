@@ -43,6 +43,10 @@ if( have_rows('flexible_content') ): ?>
        elseif( get_row_layout() == 'full_width_background_section' ) :
          get_template_part('parts/global/partials/full-width-background');
 
+       // 4 Column
+       elseif( get_row_layout() == 'four_col_icon_grid' ) :
+         get_template_part('parts/global/partials/four-col');
+
        endif;
 
      endwhile; // close the loop of flexible content

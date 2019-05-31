@@ -1,0 +1,67 @@
+/*
+ * Icon Block Grid
+ */
+
+.four-col {
+  // padding: rem(50) 0;
+
+  h6 {
+    font-size: rem(26);
+    color: $primary;
+    border-bottom: 2px solid $offwhite;
+
+    span {
+      padding: 0 20px;
+      line-height: 30px;
+      position: relative;
+      top: 15px;
+      font-weight: 900 !important;
+      background-color: #fff;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(32);
+    padding-bottom: rem(32);
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: rem(120);
+    }
+  }
+
+  .text {
+    p {
+      font-size: rem(26);
+      color: $lightGray;
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .four-col {
+    &__column {
+      padding-top: rem(25);
+      padding-bottom: rem(25);
+    }
+
+    .icon {
+      img {
+        width: 60%;
+      }
+    }
+
+    .text p {
+      font-size: rem(18);
+    }
+  }
+}

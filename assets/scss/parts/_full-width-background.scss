@@ -35,8 +35,20 @@
     margin-top: rem(40);
   }
 
+  &--image-included {
+    padding: 15% 0 !important;
+  }
+
   &--middle-position {
-      padding: 20% 0 20% !important;
+    padding: 20% 0 !important;
+  }
+
+  &__image-under-headline {
+    margin: 16px auto 40px;
+
+    img {
+      max-width: 70%;
+    }
   }
 
   &__col {
@@ -77,6 +89,10 @@
 @media screen and (min-width: rem(1500)) {
   .full-width-background {
 
+    &--image-included {
+      padding: 15% 0 !important;
+    }
+
     &--middle-position {
         padding: 25% 0 !important;
     }
@@ -97,6 +113,17 @@
 
       &:last-of-type {
         border-bottom: none !important;
+      }
+    }
+
+    &--image-included {
+      padding: 20% 0 !important;
+    }
+
+    &__image-under-headline {
+
+      img {
+        max-width: 100%;
       }
     }
 
