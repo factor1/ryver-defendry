@@ -39,13 +39,13 @@
           <?php echo $header; ?>
         </h1>
         <?php if($hero_video) : ?>
-          <div data-aos="fade-left" data-aos-delay="1200" data-aos-duration="400">
+          <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="400">
             <a class="button button--video hero-button" href="<?php echo $hero_video_link['url']; ?>">
               <span><i class="fa fa-play"></i></span> <?php echo $hero_video_link['title']; ?>
             </a>
           </div>
         <?php endif; ?>
-        <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="400">
+        <div data-aos="fade-left" data-aos-delay="1200" data-aos-duration="400">
           <a class="button button--primary hero-button" href="<?php echo $link['url']; ?>">
             <?php echo $link['title']; ?>
           </a>
