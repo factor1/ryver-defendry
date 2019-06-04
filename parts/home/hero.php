@@ -35,7 +35,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo-Reverse.svg" alt="Defendry" />
           </a>
         </div>
-        <h1 class="hero__headline" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="600">
+        <h1 class="hero__headline" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="400">
           <?php echo $header; ?>
         </h1>
         <?php if($hero_video) : ?>
