@@ -127,4 +127,5 @@ $('.defendry-search-toggle').click(function() {
 	$('#modal-search').slideToggle('fast');
 });
 
+
 });
