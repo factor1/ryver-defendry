@@ -4,6 +4,7 @@
 $header = get_sub_field('header');
 $img_id = get_sub_field('image');
 $img = wp_get_attachment_image_src($img_id, 'fifty-fifty');
+$alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
 $link = get_sub_field('link');
 
 ?>
@@ -30,7 +31,7 @@ $link = get_sub_field('link');
           <div class="sm-col-12 col-4 columns stretch cta__image-wrap">
             <div class="fifty-fifty__image" data-aos="fade-in">
               <!-- <img src="<?php // echo $img[0]; ?>" /> -->
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mark.svg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mark.svg" alt="<?php echo $alt_text; ?>" />
             </div>
           </div>
 

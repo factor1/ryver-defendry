@@ -5,6 +5,7 @@
   $bg_img = wp_get_attachment_image_src($bg_img_id, 'full');
   $art_img_id = get_field('art_image');
   $art_img = wp_get_attachment_image_src($art_img_id, 'full');
+  $alt_text = get_post_meta($art_img_id , '_wp_attachment_image_alt', true);
   $art_screen_img_id = get_field('screen_for_art_image');
   $art_screen_img = wp_get_attachment_image_src($art_screen_img_id, 'full');
   $header = get_field('header');
@@ -26,7 +27,7 @@
 
     <div class="row row--full-width hero__row">
       <?php if ($art_img) : ?>
-        <img class="hero__art" src="<?php echo $art_img[0]; ?>" alt="ART" data-aos="fade-right" data-aos-delay="200" />
+        <img class="hero__art" src="<?php echo $art_img[0]; ?>" alt="<?php echo $alt_text; ?>" data-aos="fade-right" data-aos-delay="200" />
       <?php endif; ?>
 
       <div class="col-5 sm-col-11 col-right sm-col-centered sm-text-center hero__row__content">

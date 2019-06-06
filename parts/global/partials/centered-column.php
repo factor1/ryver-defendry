@@ -33,7 +33,9 @@ if( have_rows('content_blocks') ) : ?>
           $dividerAbove = get_sub_field('divider_toggle_above');
           $insertImage = get_sub_field('insert_image');
           $imgSize = get_sub_field('image_size');
-          $img = wp_get_attachment_image_src(get_sub_field('image'), $imgSize);
+          $imageID = get_sub_field('image');
+          $img = wp_get_attachment_image_src($imageID, $imgSize);
+          $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true);
           $content = get_sub_field('content');
           $divider = get_sub_field('divider_toggle');
 
@@ -43,7 +45,7 @@ if( have_rows('content_blocks') ) : ?>
 
           <div class="centered-column__row <?php echo $removePaddingClass; ?> <?php echo $dotClass; echo $dotClassAbove; ?>" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
             <?php if( $img ) : ?>
-              <img class="<?php if($imgSize == 'full') : echo 'full-image'; endif ?>" src="<?php echo $img[0]; ?>" alt="Column image">
+              <img class="<?php if($imgSize == 'full') : echo 'full-image'; endif ?>" src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>">
             <?php endif; ?>
 
             <?php echo $content; ?>
