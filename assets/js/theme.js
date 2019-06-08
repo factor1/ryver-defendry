@@ -127,5 +127,9 @@ $('.defendry-search-toggle').click(function() {
 	$('#modal-search').slideToggle('fast');
 });
 
+// Youtube Thumbnail HighRes
+$('iframe.yt-hd-thumbnail').youTubeHDThumbnail({
+	darkenThumbnail: true,
+});
 
 });
