@@ -22,7 +22,9 @@ if( have_rows('columns') ) :
       </div>
 
       <?php while( have_rows('columns') ) : the_row();
-        $img = wp_get_attachment_image_src(get_sub_field('image'), '');
+        $img_id = get_sub_field('image');
+        $img = wp_get_attachment_image_src($img_id, '');
+        // $alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
         $imgSizeChoice = get_sub_field('image_size');
         $imgSize = $imgSizeChoice == 'small' ? 'img--small' : 'img';
         $headline = get_sub_field('column_headline');

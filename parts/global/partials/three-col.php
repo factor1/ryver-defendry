@@ -25,7 +25,9 @@ $header = get_sub_field('header');
           <?php $load = 100; ?>
           <?php while( have_rows('columns') ) : the_row();
             // variables
-            $img = wp_get_attachment_image_src(get_sub_field('image'), '');
+            $img_id = get_sub_field('image');
+            $img = wp_get_attachment_image_src($img_id, '');
+            //$alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
             $text = get_sub_field('text');
 
           ?>

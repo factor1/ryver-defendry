@@ -26,6 +26,11 @@
             <?php
               // variables
               $thumbnail = get_the_post_thumbnail();
+              if ( $alt_text = get_the_post_thumbnail_caption() ) {
+                  // Nothing to do here
+              } else {
+                  $alt_text = get_the_title();
+              }
 
               if ( empty($thumbnail) ) :
             ?>
@@ -37,7 +42,7 @@
             <?php else : ?>
               <div class="sm-col-12 md-col-10 col-3 col-centered">
                 <a class="no-underline" href="<?php echo get_permalink(); ?>">
-                  <img src="<?php the_post_thumbnail_url( 'full' ); ?>" />
+                  <img src="<?php the_post_thumbnail_url( 'full' ); ?>" alt="<?php echo $alt_text; ?>" />
                 </a>
               </div>
             <?php endif; ?>

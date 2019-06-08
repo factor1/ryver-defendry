@@ -5,6 +5,7 @@
   $bg_img = wp_get_attachment_image_src($bg_img_id, 'full');
   $art_img_id = get_field('art_image');
   $art_img = wp_get_attachment_image_src($art_img_id, 'full');
+  $alt_text = get_post_meta($art_img_id , '_wp_attachment_image_alt', true);
   $art_screen_img_id = get_field('screen_for_art_image');
   $art_screen_img = wp_get_attachment_image_src($art_screen_img_id, 'full');
   $header = get_field('header');
@@ -26,7 +27,7 @@
 
     <div class="row row--full-width hero__row">
       <?php if ($art_img) : ?>
-        <img class="hero__art" src="<?php echo $art_img[0]; ?>" alt="ART" data-aos="fade-right" data-aos-delay="200" />
+        <img class="hero__art" src="<?php echo $art_img[0]; ?>" alt="<?php echo $alt_text; ?>" data-aos="fade-right" data-aos-delay="200" />
       <?php endif; ?>
 
       <div class="col-5 sm-col-11 col-right sm-col-centered sm-text-center hero__row__content">
@@ -35,17 +36,17 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo-Reverse.svg" alt="Defendry" />
           </a>
         </div>
-        <h1 class="hero__headline" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="600">
+        <h1 class="hero__headline" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="400">
           <?php echo $header; ?>
         </h1>
         <?php if($hero_video) : ?>
-          <div data-aos="fade-left" data-aos-delay="1200" data-aos-duration="400">
+          <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="400">
             <a class="button button--video hero-button" href="<?php echo $hero_video_link['url']; ?>">
               <span><i class="fa fa-play"></i></span> <?php echo $hero_video_link['title']; ?>
             </a>
           </div>
         <?php endif; ?>
-        <div data-aos="fade-left" data-aos-delay="1100" data-aos-duration="400">
+        <div data-aos="fade-left" data-aos-delay="1200" data-aos-duration="400">
           <a class="button button--primary hero-button" href="<?php echo $link['url']; ?>">
             <?php echo $link['title']; ?>
           </a>

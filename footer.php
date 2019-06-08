@@ -20,16 +20,16 @@
     <div class="col-3 md-col-6 sm-col-12 stretch sm-text-center footer__social-links">
       <h6 class="sm-text-center">Stay Connected</h6>
       <a href="https://fb.me/DefendryART" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" alt="Defendry Facebook" />
       </a>
       <a href="https://twitter.com/DefendryART" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" alt="Defendry Twitter" />
       </a>
       <a href="https://www.linkedin.com/company/defendry/" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/linkedin.svg" alt="Defendry LinkedIn" />
       </a>
       <a href="https://www.youtube.com/channel/UCBLG_w4PHmPfFiJTUdteo_Q?" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/youtube.svg" alt="Defendry Youtube" />
       </a>
 
       <div id="mc_embed_signup">
@@ -52,7 +52,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg" />
         </div>
         <div class="col-10 sm-col-8 sm-text-left col-no-pad columns stretch">
-          <a href="mailto:sales@defendry.com">sales@defendry.com</a>
+          <a href="mailto:&#115;&#097;&#108;&#101;&#115;&#064;&#100;&#101;&#102;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;">&#115;&#097;&#108;&#101;&#115;&#064;&#100;&#101;&#102;&#101;&#110;&#100;&#114;&#121;&#046;&#099;&#111;&#109;</a>
         </div>
       </div>
       <div class="row sm-middle-align">
@@ -66,13 +66,13 @@
     </div>
     <div class="col-3 md-col-6 sm-col-12 stretch footer__logo">
       <a href="/" class="text-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo.svg" alt="Defendry Logo" />
       </a>
       <p class="text-center">
         Next Generation Surveillance <span>with ART<sup>TM</sup></span>
       </p>
       <p class="text-center">
-        <img style="max-width:200px; margin:auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/ESA_Assoc_Member_Logo.png" />
+        <img style="max-width:200px; margin:auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/ESA_Assoc_Member_Logo.png" alt="ESA Association Member Logo" />
       </p>
 
       <a class="text-center" href="https://www.avnet.com" target="_blank" style="display:none;">
