@@ -15,7 +15,7 @@
 
 ?>
 
-  <section class="container hero" data-aos="fade-in" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
+  <section class="container hero hero--case-hero" data-aos="fade-in" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
     <div class="row hero__row">
       <div class="col-12 sm-col-11 sm-col-centered <?php echo $header_alignment_col_class; ?> sm-text-center hero__row__content">
         <h1 class="hero__headline <?php echo $header_color_class; ?><?php echo $header_alignment_h1_class; ?>" data-aos="fade-up" data-aos-delay="200" data-aos-duration="200">
