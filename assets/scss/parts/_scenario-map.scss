@@ -2,9 +2,10 @@
  * Centered Column Section
  */
 
+/////////////////////////////
 
 
-.centered-column {
+.scenario-map {
   z-index: 1;
 
   &.background {
@@ -48,10 +49,31 @@
   }
 
   &__row {
-    padding: rem(100) rem(20);
+    // padding: rem(100) rem(20);
+    justify-content: flex-start;
+    margin: rem(40) auto rem(122);
+    padding: rem(20) 0 rem(10);
+    border-radius: 5px;
+    box-shadow: $box_shadow;
 
     &--remove-padding {
       padding: 0 !important;
+    }
+
+    &--horizontal {
+      &__img {
+        padding: rem(40) rem(40) rem(10);
+      }
+    }
+
+    &__column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        padding: rem(10) 0;
+      }
     }
   }
 
@@ -68,7 +90,7 @@
         &:before {
           content: '';
           position: absolute;
-          top: rem(10);
+          top: -50px;
           left: calc(50% - 1px);
           width: rem(2);
           height: rem(50);
@@ -79,7 +101,7 @@
       &:after {
         content: url('../img/dot-divider.svg');
         position: absolute;
-        bottom: rem(-10);
+        bottom: -72px;
         left: calc(50% - 10.5px);
         width: rem(21);
         height: rem(72);
@@ -104,14 +126,14 @@
 
 // Media Queries
 @media screen and (max-width: $small-breakpoint) {
-  .centered-column {
+  .scenario-map {
     &.background {
       padding-top: rem(50);
     }
 
     .col-8 div {
       &.dot {
-        padding: rem(100) rem(20);
+        padding: rem(16);
       }
     }
   }
@@ -119,6 +141,6 @@
 
 // Specific page overrides
 // RILA 2019 LP
-.page-id-346 .centered-column__row {
+.page-id-346 .scenario-map__row {
   padding: rem(20);
 }

@@ -2,7 +2,6 @@
 /*
  * Centered Column Section
  */
-
 // Custom Fields
 $bgToggle = get_sub_field('background_toggle');
 $bgFlip = get_sub_field('flip_background_image');
@@ -11,12 +10,10 @@ $headlineSize = get_sub_field('headline_size');
 $headlineNoPadding = get_sub_field('remove_headline_top_padding');
 $btnToggle = get_sub_field('button_toggle');
 $btn = get_sub_field('button');
-
 // Conditional classes/styles
 $headlinePadding = $headlineNoPadding ? ' centered-column__headline--no-padding' : '';
 $bgClass = $bgToggle ? ' background' : '';
 $bgFlipClass = $bgFlip ? ' background-flip' : '';
-
 if( have_rows('content_blocks') ) : ?>
 
   <section class="container centered-column<?php echo $bgClass; echo $bgFlipClass; ?>">
@@ -38,7 +35,6 @@ if( have_rows('content_blocks') ) : ?>
           $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true);
           $content = get_sub_field('content');
           $divider = get_sub_field('divider_toggle');
-
           $removePaddingClass = $insertImage ? '' : 'centered-column__row--remove-padding';
           $dotClassAbove = $dividerAbove ? ' dot--above' : '';
           $dotClass = $divider ? ' dot' : ''; ?>
