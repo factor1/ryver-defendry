@@ -15,6 +15,10 @@ if( have_rows('flexible_content') ): ?>
        if( get_row_layout() == 'fifty_fifty' ) :
          get_template_part('parts/global/partials/fifty-fifty');
 
+       // 60/40
+       if( get_row_layout() == 'sixty_fourty' ) :
+         get_template_part('parts/global/partials/sixty-fourty');
+
        // 3 Column
        elseif( get_row_layout() == 'three_column' ) :
          get_template_part('parts/global/partials/three-col');
