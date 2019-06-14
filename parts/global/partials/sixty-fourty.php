@@ -32,7 +32,7 @@ $textAnimation = $position == 'right' ? 'fade-right' : 'fade-left';  ?>
           </div>
         <?php endif; ?>
 
-        <div class="col-5 md-col-6 sm-col-8 sm-col-centered sm-text-center" data-aos="<?php echo $textAnimation; ?>">
+        <div class="col-5 md-col-6 sm-col-11 sm-col-centered sm-text-center col-right" data-aos="<?php echo $textAnimation; ?>">
           <?php if($content_header) : ?>
             <h2><?php echo $content_header; ?></h2>
           <?php endif;

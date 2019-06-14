@@ -10,13 +10,14 @@
     background: url('../img/section-bg-img.jpg') left top/100% auto no-repeat;
   }
 
+  .col-right {
+    order: 1;
+  }
+
   // Custom red check bullet point styles
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 0;
-    padding:0 !important;
+    padding: 24px !important;
     text-align: left;
 
     li {
@@ -24,17 +25,11 @@
 
       list-style: none;
       margin-left: 0px;
-      margin-bottom: 35px;
-      max-width: 25%;
-      padding: 50px 10px 0;
+      margin-bottom: 24px;
+      padding-left: 40px;
       background: url('../img/checkmark.svg') no-repeat;
-      background-position-x: 50%;
-      background-size: 30px 30px;
+      background-size: 25px 25px;
       display: block;
-      color: $white;
-      text-align: center;
-      text-shadow: 0px 2px 3px rgba(0,0,0,0.2);
-      border-right: 1px solid white;
 
       strong {
         font-weight: 900;
@@ -52,9 +47,19 @@
     color: $gray;
   }
 
+  h2 {
+    color: $gray;
+    font-weight: 400;
+
+    span {
+      font-weight: 900;
+      color: $primary;
+    }
+  }
+
   .button {
-    margin-top: rem(100);
-    margin-bottom: rem(50);
+    margin-top: rem(48);
+    margin-bottom: 0;
   }
 }
 
