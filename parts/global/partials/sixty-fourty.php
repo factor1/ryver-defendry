@@ -40,7 +40,7 @@ $textAnimation = $position == 'right' ? 'fade-right' : 'fade-left';  ?>
           echo $content; ?>
         </div>
 
-        <div class="col-7 md-col-6 sm-col-8 sm-col-centered" data-aos="<?php echo $imgAnimation; ?>" data-aos-duration="500">
+        <div class="col-7 md-col-6 sm-col-11 sm-col-centered" data-aos="<?php echo $imgAnimation; ?>" data-aos-duration="500">
           <?php if($image_has_video_link_attached) : echo '<a href="#video-modal" >'; endif ?>
             <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
           <?php if($image_has_video_link_attached) : echo '</a>'; endif ?>
