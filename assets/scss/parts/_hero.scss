@@ -133,6 +133,14 @@
       right: 20%;
     }
 
+    &--case-hero {
+      justify-content: center;
+
+      .hero__row {
+        background: none !important;
+      }
+    }
+
     &__row {
       padding: rem(70) 0 rem(100);
       background: rgba(43,45,82,0.7);
