@@ -6,8 +6,7 @@ $position = get_sub_field('image_position');
 $img_id = get_sub_field('image');
 $img = wp_get_attachment_image_src($img_id, 'fifty-fifty');
 $alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
-$image_has_video_link_attached = get_sub_field('image_has_video_link_attached');
-$video = get_sub_field('video');
+
 $content_header = get_sub_field('content_header');
 $content = get_sub_field('content');
 $btnToggle = get_sub_field('button_toggle');
@@ -41,7 +40,7 @@ $textAnimation = $position == 'right' ? 'fade-right' : 'fade-left';  ?>
         </div>
 
         <div class="col-5 sm-col-8 sm-col-centered" data-aos="<?php echo $imgAnimation; ?>" data-aos-duration="500">
-          
+
           <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
         </div>
       </div>
