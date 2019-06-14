@@ -21,7 +21,7 @@ $textAnimation = $position == 'right' ? 'fade-right' : 'fade-left';  ?>
 
 <section class="container sixty-fourty<?php echo $bgClass; ?>">
   <div class="row">
-    <div class="sm-col-11 col-10 col-centered">
+    <div class="sm-col-11 col-12 col-centered">
       <div class="row row--align-items-center<?php echo $rowClass; ?>">
 
         <?php if($header) : ?>
