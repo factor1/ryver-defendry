@@ -1,0 +1,79 @@
+/*------------------------------------------------------------------------------
+  50/50
+------------------------------------------------------------------------------*/
+.sixty-fourty {
+  padding: rem(80) 0 0;
+  overflow: hidden;
+
+  &.background {
+    padding-top: rem(150);
+    background: url('../img/section-bg-img.jpg') left top/100% auto no-repeat;
+  }
+
+  .col-right {
+    order: 1;
+  }
+
+  // Custom red check bullet point styles
+  ul {
+    margin: 0;
+    padding: 24px !important;
+    text-align: left;
+
+    li {
+      // custom marker
+
+      list-style: none;
+      margin-left: 0px;
+      margin-bottom: 24px;
+      padding-left: 40px;
+      background: url('../img/checkmark.svg') no-repeat;
+      background-size: 25px 25px;
+      display: block;
+
+      strong {
+        font-weight: 900;
+      }
+
+      &:last-of-type {
+        margin-bottom: 2px;
+        border-right: none !important;
+      }
+    }
+  }
+
+  h1 {
+    padding: rem(50) 0;
+    color: $gray;
+  }
+
+  h2 {
+    color: $gray;
+    font-weight: 400;
+
+    span {
+      font-weight: 900;
+      color: $primary;
+    }
+  }
+
+  .button {
+    margin-top: rem(48);
+    margin-bottom: 0;
+  }
+}
+
+// Media Queries
+@media screen and (max-width:$small-breakpoint) {
+  .sixty-fourty {
+    padding: rem(30) 0;
+
+    &.background {
+      padding-top: rem(75);
+    }
+
+    .col-5 {
+      margin-top: rem(30);
+    }
+  }
+}
