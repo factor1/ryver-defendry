@@ -6,7 +6,8 @@ $position = get_sub_field('image_position');
 $img_id = get_sub_field('image');
 $img = wp_get_attachment_image_src($img_id, 'fifty-fifty');
 $alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
-
+$image_has_video_link_attached = get_sub_field('image_has_video_link_attached');
+$video = get_sub_field('video');
 $content_header = get_sub_field('content_header');
 $content = get_sub_field('content');
 $btnToggle = get_sub_field('button_toggle');
@@ -18,7 +19,7 @@ $bgClass = $bgToggle ? ' background' : '';
 $imgAnimation = $position == 'left' ? 'fade-right' : 'fade-left';
 $textAnimation = $position == 'right' ? 'fade-right' : 'fade-left';  ?>
 
-<section class="container fifty-fifty<?php echo $bgClass; ?>">
+<section class="container sixty-fourty<?php echo $bgClass; ?>">
   <div class="row">
     <div class="sm-col-11 col-10 col-centered">
       <div class="row row--align-items-center<?php echo $rowClass; ?>">
@@ -31,7 +32,7 @@ $textAnimation = $position == 'right' ? 'fade-right' : 'fade-left';  ?>
           </div>
         <?php endif; ?>
 
-        <div class="col-6 sm-text-center" data-aos="<?php echo $textAnimation; ?>">
+        <div class="col-5 md-col-6 sm-col-8 sm-col-centered sm-text-center" data-aos="<?php echo $textAnimation; ?>">
           <?php if($content_header) : ?>
             <h2><?php echo $content_header; ?></h2>
           <?php endif;
@@ -39,9 +40,10 @@ $textAnimation = $position == 'right' ? 'fade-right' : 'fade-left';  ?>
           echo $content; ?>
         </div>
 
-        <div class="col-5 sm-col-8 sm-col-centered" data-aos="<?php echo $imgAnimation; ?>" data-aos-duration="500">
-
-          <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
+        <div class="col-7 md-col-6 sm-col-8 sm-col-centered" data-aos="<?php echo $imgAnimation; ?>" data-aos-duration="500">
+          <?php if($image_has_video_link_attached) : echo '<a href="#video-modal" >'; endif ?>
+            <img src="<?php echo $img[0]; ?>" alt="<?php echo $alt_text; ?>" />
+          <?php if($image_has_video_link_attached) : echo '</a>'; endif ?>
         </div>
       </div>
 

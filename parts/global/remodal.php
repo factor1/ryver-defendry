@@ -70,7 +70,7 @@
 
 <?php
 if( have_rows('flexible_content') ):  while ( have_rows('flexible_content') ) : the_row();
-  if( get_row_layout() == 'video_modal' ) :
+  if( get_row_layout() == 'video_modal' || get_row_layout() == 'sixty_fourty' ) :
     $video = get_sub_field('video'); ?>
 
     <div class="remodal-bg">
