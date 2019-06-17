@@ -452,3 +452,16 @@ sup {
     }
   }
 }
+
+// Remodal Safari Fixes
+.safari {
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .remodal.remodal--video {
+      vertical-align: top;
+    }
+  }
+}
