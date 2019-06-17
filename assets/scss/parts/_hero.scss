@@ -30,6 +30,7 @@
 
   &--case-hero {
     justify-content: center;
+    background-position-y: top !important;
   }
 
   .ryver-power {
@@ -77,6 +78,10 @@
 
   .hero {
     min-height: rem(500);
+
+    &--case-hero {
+      min-height: 350px !important;
+    }
   }
 }
 
