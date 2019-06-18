@@ -19,6 +19,11 @@ jQuery( document ).ready(function( $ ) {
 	// Nifty Nav
   $('#nifty-nav-toggle').niftyNav();
 
+	// Mobile Nav submenu
+	$('.menu-item-has-children').click(function(){
+		$(this).find('.sub-menu').slideToggle();
+	});
+
 	// Tilt JS
 	$('.js-tilt').tilt({
     maxTilt: 10,

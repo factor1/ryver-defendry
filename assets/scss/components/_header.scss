@@ -121,7 +121,7 @@
 .primary-nav {
   display: inline-flex;
 
-  ul {
+  ul.menu {
     position: relative;
     top: 3px;
     display: flex;
@@ -139,6 +139,7 @@
 
       a {
         margin: 0;
+        padding-bottom: 32px;
         font: $light rem(20)/rem(25) $overpass;
         color: $dark;
         transition: all 0.2s ease;
@@ -156,6 +157,12 @@
 
         &:hover:after {
           width: 100%;
+        }
+      }
+
+      &:hover {
+        .sub-menu {
+          display: flex;
         }
       }
     }
@@ -204,6 +211,8 @@
   flex-direction: column !important;
   justify-content: flex-start !important;
   position: absolute !important;
+  padding: 0;
+  list-style: none;
   top: 57px !important;
   left: -16px !important;
   width: 100%;
@@ -212,6 +221,13 @@
     top: 0 !important;
     padding: 0 !important;
     width: 100%;
+    height: unset !important;
+
+    &.current_page_item {
+      a {
+        background: $darkPrimary;
+      }
+    }
 
     a {
       display: block;
@@ -307,6 +323,28 @@
           a {
             font-size: rem(16);
           }
+        }
+      }
+    }
+
+    .menu-item-has-children {
+      &:after {
+        content: "v";
+      }
+    }
+
+    .sub-menu {
+      position: relative !important;
+      top: 0 !important;
+      padding-left: 16px;
+
+      li {
+        margin-bottom: 0 !important;
+
+        a {
+          background: $white !important;
+          color: $dark !important;
+          border-bottom: 2px solid $dark;
         }
       }
     }
