@@ -132,6 +132,7 @@
     list-style: none;
 
     li {
+      position: relative;
       height: rem(33);
       padding-right: rem(32);
       margin: 0;
@@ -199,6 +200,7 @@
 }
 
 .sub-menu {
+  display: none;
   flex-direction: column !important;
   justify-content: flex-start !important;
   position: absolute !important;
@@ -207,9 +209,15 @@
   width: 100%;
 
   li {
+    top: 0 !important;
+    padding: 0 !important;
+    width: 100%;
 
     a {
+      display: block;
+      width: calc(100% + 32px);
       padding: 10px 16px !important;
+      text-align: left;
       color: $white !important;
       background: $primary;
       transition: 0.2s ease;
