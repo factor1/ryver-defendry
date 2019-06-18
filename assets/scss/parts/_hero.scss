@@ -4,7 +4,7 @@
 .hero {
   position: relative;
   padding: rem(70) 0;
-  z-index: 0;
+  overflow: hidden;
 
   // Padding for when hero text was left aligned
   // &__row {
