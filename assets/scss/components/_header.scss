@@ -197,6 +197,34 @@
     }
   }
 }
+
+.sub-menu {
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 57px;
+  left: -16px;
+  width: 100%;
+
+  li {
+
+    a {
+      padding: 10px 16px !important;
+      color: $white !important;
+      background: $primary;
+      transition: 0.2s ease;
+
+      &:before, &:after {
+        content: none;
+      }
+
+      &:hover {
+        background: $darkPrimary;
+      }
+    }
+  }
+}
+
 .nifty-panel {
   overflow:hidden;
 
