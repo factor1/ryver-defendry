@@ -4,6 +4,8 @@
 
 .two-column-layout {
   padding: rem(50) 0;
+  background-color: $white;
+  z-index: 1;
 
   &.background {
     padding-top: rem(200);
