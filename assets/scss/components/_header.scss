@@ -326,6 +326,28 @@
         }
       }
     }
+
+    .menu-item-has-children {
+      &:after {
+        content: "v";
+      }
+    }
+
+    .sub-menu {
+      position: relative !important;
+      top: 0 !important;
+      padding-left: 16px;
+
+      li {
+        margin-bottom: 0 !important;
+
+        a {
+          background: $white !important;
+          color: $dark !important;
+          border-bottom: 2px solid $dark;
+        }
+      }
+    }
     .header__search-bar {
       .search-form {
         width: 100% !important;
