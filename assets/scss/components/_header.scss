@@ -199,11 +199,11 @@
 }
 
 .sub-menu {
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  top: 57px;
-  left: -16px;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  position: absolute !important;
+  top: 57px !important;
+  left: -16px !important;
   width: 100%;
 
   li {
@@ -215,7 +215,7 @@
       transition: 0.2s ease;
 
       &:before, &:after {
-        content: none;
+        content: none !important;
       }
 
       &:hover {
