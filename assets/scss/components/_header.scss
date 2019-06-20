@@ -297,7 +297,7 @@
         &.current-menu-item {
           a {
             color: $primary;
-            text-decoration: underline;
+            //text-decoration: underline;
           }
         }
       }
@@ -324,12 +324,6 @@
             font-size: rem(16);
           }
         }
-      }
-    }
-
-    .menu-item-has-children {
-      &:after {
-        content: "v";
       }
     }
 
