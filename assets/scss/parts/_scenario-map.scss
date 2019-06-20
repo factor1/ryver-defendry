@@ -56,6 +56,10 @@
     border-radius: 5px;
     box-shadow: $box_shadow;
 
+    &--remove-box-shadow {
+      box-shadow: none !important;
+    }
+
     &--remove-padding {
       padding: 0 !important;
     }
@@ -119,6 +123,7 @@
 
     &.full-image {
       height: rem(400);
+      max-height: rem(250);
       margin-bottom: rem(40);
     }
   }

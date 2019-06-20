@@ -22,7 +22,7 @@ if( have_rows('content_blocks') ) : ?>
   <section class="container scenario-map<?php echo $bgClass; echo $bgFlipClass; ?>">
     <div class="row">
       <?php if($headlineCenteredCol) : ?>
-        <div class="col-12 sm-col-11 text-center" data-aos="fade-up" data-aos-duration="800">
+        <div class="col-12 sm-col-11 col-centered text-center" data-aos="fade-up" data-aos-duration="800">
           <h1 class="scenario-map__headline--<?php echo $headlineSize; echo $headlinePadding; ?>"><?php echo $headlineCenteredCol; ?></h1>
         </div>
       <?php endif; ?>
@@ -30,6 +30,7 @@ if( have_rows('content_blocks') ) : ?>
       <div class="col-8 md-col-10 sm-col-11 col-centered">
 
         <?php while( have_rows('content_blocks') ) : the_row();
+          $remove_box_shadow = get_sub_field('remove_box_shadow');
           $headline = get_sub_field('headline');
           $subline = get_sub_field('subline');
           $dividerAbove = get_sub_field('divider_toggle_above');
@@ -43,11 +44,12 @@ if( have_rows('content_blocks') ) : ?>
           $content = get_sub_field('content');
           $divider = get_sub_field('divider_toggle');
 
-          $removePaddingClass = $insertImage ? '' : 'scenario-map__row--remove-padding';
+          $remove_box_shadow_class = $remove_box_shadow ? ' scenario-map__row--remove-box-shadow' : '';
+          $removePaddingClass = $insertImage ? '' : ' scenario-map__row--remove-padding';
           $dotClassAbove = $dividerAbove ? ' dot--above' : '';
           $dotClass = $divider ? ' dot' : ''; ?>
 
-          <div class="row scenario-map__row <?php echo $removePaddingClass; ?> <?php echo $dotClass; echo $dotClassAbove; ?>" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+          <div class="row scenario-map__row <?php echo $removePaddingClass; echo $remove_box_shadow_class; echo $dotClass; echo $dotClassAbove; ?>" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
             <div class="col-12 text-center">
               <h2><?php echo $headline; ?></h2>
             </div>
