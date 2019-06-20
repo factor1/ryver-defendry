@@ -89,7 +89,7 @@ if( have_rows('flexible_content') ):  while ( have_rows('flexible_content') ) : 
   <?php endif;
 endwhile; endif; ?>
 
-<?php if( is_front_page() ) :
+<?php if( is_front_page() || is_page_template('front-page.php') ) :
   $hero_video = get_field('hero_video');?>
 
   <div class="remodal-bg">
