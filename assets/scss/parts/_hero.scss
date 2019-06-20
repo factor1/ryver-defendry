@@ -17,6 +17,27 @@
     color: $offwhite;
   }
 
+  &--fifty-fifty {
+    h1 {
+      font: 300 55px/60px $overpass;
+    }
+  }
+
+  &--bottom-divider {
+
+    @media screen and (min-width:$small-breakpoint) { padding-bottom: 250px;}
+
+    &:after {
+      content: '';
+      background: url('../img/divider.png') center center/cover no-repeat;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 48%;
+    }
+  }
+
   &__logo {
     max-width: rem(280);
 
@@ -121,6 +142,12 @@
       padding: rem(70) 0;
       z-index: -2;
     }
+
+    &--fifty-fifty {
+      h1 {
+        font: 300 35px/40px $overpass;
+      }
+    }
   }
 }
 
@@ -128,6 +155,20 @@
   .hero {
     background-position-x: 0% !important;
     padding: 0;
+
+    &--fifty-fifty {
+
+      &__left-col {
+        order: 1;
+      }
+    }
+
+    &--bottom-divider {
+
+      &:after {
+        height: 10%;
+      }
+    }
 
     &__art-screen {
       background-position-x: 0% !important;
