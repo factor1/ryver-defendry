@@ -336,6 +336,7 @@
         margin-bottom: 0 !important;
 
         a {
+          width: calc(100% + 40px);
           background: $white !important;
           color: $dark !important;
           border-bottom: 2px solid $dark;
