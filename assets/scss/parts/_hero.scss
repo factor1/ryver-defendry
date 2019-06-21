@@ -39,7 +39,12 @@
       left: 0;
       right: 0;
       height: 48%;
+      z-index: 1;
     }
+  }
+
+  .col-right {
+    z-index: 2;
   }
 
   &__logo {
