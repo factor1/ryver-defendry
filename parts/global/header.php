@@ -18,12 +18,12 @@
         <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/Defendry-Logo.svg" alt="Defendry" />
       </a>
     </div>
-    <div class="col-5 sm-col-6 lg-only text-right header__navigation-wrap">
+    <div class="col-6 sm-col-6 lg-only text-right header__navigation-wrap">
       <?php // Primary Menu
         wp_nav_menu( array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'primary-nav') );
       ?>
     </div>
-    <div class="col-4 sm-col-2 lg-only text-right header__utility-wrap">
+    <div class="col-3 sm-col-2 lg-only text-right header__utility-wrap">
       <a class="defendry-search defendry-search-toggle" onmouseup="setTimeout(function(){document.getElementById('defendry-search').focus()},10);"><i class="fa fa-search"></i></a>
       <a class="button button--primary" href="#tell-me-more">Tell Me More</a>
     </div>
