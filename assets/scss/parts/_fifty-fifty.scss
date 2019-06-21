@@ -39,3 +39,10 @@
     }
   }
 }
+
+// ie11 Fixes
+.ie-11 {
+  .fifty-fifty {
+    max-height: 450px;
+  }
+}

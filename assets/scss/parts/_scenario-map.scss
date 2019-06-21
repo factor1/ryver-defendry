@@ -149,3 +149,14 @@
 .page-id-346 .scenario-map__row {
   padding: rem(20);
 }
+
+// ie11 Fixes
+.ie-11 {
+  .scenario-map {
+    &__row {
+      .full-image {
+        height: auto !important;
+      }
+    }
+  }
+}
