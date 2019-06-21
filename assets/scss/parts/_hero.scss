@@ -162,6 +162,16 @@
 
 @media screen and (max-width: $small-breakpoint) {
   .hero {
+
+    &--case-hero {
+      justify-content: center;
+      background-position-x: center !important;
+
+      .hero__row {
+        background: none !important;
+      }
+    }
+    
     background-position-x: 0% !important;
     padding: 0;
 
@@ -187,14 +197,6 @@
     &__art {
       top: 40px;
       right: 20%;
-    }
-
-    &--case-hero {
-      justify-content: center;
-
-      .hero__row {
-        background: none !important;
-      }
     }
 
     &__row {
