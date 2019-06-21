@@ -27,7 +27,7 @@
 
 <?php if($fifty_fifty) : ?>
 
-  <section class="container hero hero--fifty-fifty hero<?php echo $sectionClass; ?>" data-aos="fade-in" data-aos-delay="0" data-aos-duration="200" style="background:url('<?php echo $bg_img[0]; ?>') center <?php echo $bg_img_position; ?>/cover no-repeat;">
+  <section class="container hero hero--fifty-fifty<?php echo $sectionClass; ?>" data-aos="fade-in" data-aos-delay="0" data-aos-duration="200" style="background:url('<?php echo $bg_img[0]; ?>') center <?php echo $bg_img_position; ?>/cover no-repeat;">
 
     <div class="row hero__row">
       <div class="col-6 sm-col-11 col-right sm-col-centered sm-text-center hero__row__content hero--fifty-fifty__left-col">
@@ -51,7 +51,7 @@
 
 <?php else : ?>
 
-  <section class="container hero" data-aos="fade-in" data-aos-delay="0" data-aos-duration="200" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
+  <section class="container hero<?php echo $sectionClass; ?>" data-aos="fade-in" data-aos-delay="0" data-aos-duration="200" style="background:url('<?php echo $bg_img[0]; ?>') center center/cover no-repeat;">
 
     <?php if ($art_screen_img) : ?>
       <div class="hero__art-screen" data-aos="fade-in" data-aos-delay="500" style="background:url('<?php echo $art_screen_img[0]; ?>') center <?php echo $bg_img_position; ?>/cover no-repeat;"></div>
